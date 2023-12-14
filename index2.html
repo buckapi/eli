@@ -16,7 +16,6 @@
     <link href="modules/owl-carousel/owl.theme.default.min.css" rel="stylesheet">
     <link href="modules/magnific-popup/magnific-popup.css" rel="stylesheet">
     <link href="modules/youtubepopup/YouTubePopUp.css" rel="stylesheet">
-    <link href="modules/swiper/swiper.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144098545-1"></script>
@@ -31,13 +30,13 @@
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div id="bethany-page-loading" class="bethany-pageloading">
+   <!-- Preloader -->
+    <!-- <div id="bethany-page-loading" class="bethany-pageloading">
         <div class="bethany-pageloading-inner"> 
             <img src="images/logo-dark.png" class="logo" alt=""> 
         </div>
-    </div>
-    <!-- Navigation -->
+    </div> -->
+    <!-- Navigation Bar -->
     <header>
         <div class="bethany-header-navbar">
             <div class="container bethany-navbar-container">
@@ -47,23 +46,32 @@
                             <div class="col-md-12">
                                 <nav class="navbar navbar-expand-md navbar-light">
                                     <!-- Logo -->
-                                    <a class="navbar-brand" href="index.html">
-                                        <img src="images/logo-dark.png" alt="">
-                                        <!-- <h2>Bethany<span>Wedding & Event</span></h2> -->
-                                    </a>
+                                    <a class="navbar-brand" href="index.html"> <img src="images/logo-dark.png" alt=""> </a>
                                     <!-- Menu -->
-                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+
+                                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+
                                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                         <ul class="navbar-nav ml-auto py-4 py-md-0">
-                                            <li class="nav-item active"> <a class="nav-link" href="index.html">Home</a></li>
+                                            <li class="nav-item"> <a class="nav-link" href="index.html">Home</a></li>
                                             <li class="nav-item"> <a class="nav-link" href="about.html">About</a></li>
                                             <li class="nav-item"> <a class="nav-link" href="services.html">Services</a></li>
-
                                             <li class="nav-item"> <a class="nav-link" href="portfolio.html">Portfolio</a></li>
                                             <li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a> </li>
-                                            <li class="nav-item"> <a class="nav-link" href="blog.html">Blog</a> </li>
+                                            <li class="nav-item active"> <a class="nav-link" href="blog.html">Blog</a> </li>
                                         </ul>
+                                    </div> -->
+                                    <div class="dropdown">
+                                      <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="ti-world"></span>
+                                      </button>
+                                      <div class="dropdown-menu" aria-labelledby="languageDropdown" style="background: #fff;">
+                                        <a class="dropdown-item" href="#">Español</a>
+                                        <a class="dropdown-item" href="#">Inglés</a>
+                                        <!-- Agrega más opciones de idioma si es necesario -->
+                                      </div>
                                     </div>
+                                    
                                 </nav>
                             </div>
                         </div>
@@ -72,204 +80,18 @@
             </div>
         </div>
     </header>
-    <!-- Slider -->
-    <div class="container">
-            <section class="pozo-section-slider pt-130">
-                <div class="next-container-center">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="swiper-slide-block">
-                                    <div class="swiper-slide-block-img animate-box" data-animate-effect="fadeInLeft" data-swiper-parallax-y="70%">
-                                        <a href="https://duruthemes.com/demo/html/bethany/demo2/project-page.html"> <img src="images/slider/2.jpg" alt=""> </a>
-                                    </div>
-                                    <div class="swiper-slide-block-text animate-box" data-animate-effect="fadeInRight">
-                                        <h2 data-swiper-parallax-x="-60%" class="next-main-title">To Know Us is to Love Us!</h2>
-                                        <h3 data-swiper-parallax-x="-50%" class="next-main-subtitle">Wedding & Event Planner</h3>
-                                        <p data-swiper-parallax-x="-40%" class="next-paragraph">We would love to meet up and chat about how we can make YOUR DREAM wedding happen!</p> <a data-swiper-parallax-x="-30%" style="z-index: 5;" class="next-link" href="index.html#0">Read More</a> <span data-swiper-parallax-y="60%" class="next-number">1</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="swiper-slide-block">
-                                    <div class="swiper-slide-block-img" data-swiper-parallax-y="70%">
-                                        <a href="https://duruthemes.com/demo/html/bethany/demo2/project-page-2.html"><img src="images/slider/1.jpg" alt=""></a>
-                                    </div>
-                                    <div class="swiper-slide-block-text">
-                                        <h2 data-swiper-parallax-x="-60%" class="next-main-title">Your Personal Dream Maker</h2>
-                                        <h3 data-swiper-parallax-x="-50%" class="next-main-subtitle">Planning Planner</h3>
-                                        <p data-swiper-parallax-x="-40%" class="next-paragraph">We believe that it is all about the BIG DREAMS and the small details!</p> <a data-swiper-parallax-x="-30%" class="next-link" href="index.html#0">Buy Now</a> <span data-swiper-parallax-y="60%" class="next-number animate-box" data-animate-effect="fadeInUp">2</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="swiper-slide-block">
-                                    <div class="swiper-slide-block-img" data-swiper-parallax-y="70%">
-                                        <a href="https://duruthemes.com/demo/html/bethany/demo2/project-page-2.html"> <img src="images/slider/3.jpg" alt=""> </a>
-                                    </div>
-                                    <div class="swiper-slide-block-text">
-                                        <h2 data-swiper-parallax-x="-60%" class="next-main-title">Destination Wedding Planner</h2>
-                                        <h3 data-swiper-parallax-x="-50%" class="next-main-subtitle">Wedding & Event Planner</h3>
-                                        <p data-swiper-parallax-x="-40%" class="next-paragraph">No matter your dreams - we can assist you in planning your PWE WEDDINGS & EVENTS.</p> <a data-swiper-parallax-x="-30%" class="next-link" href="index.html#0">Read More</a> <span data-swiper-parallax-y="60%" class="next-number">3</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next animate-box" data-animate-effect="fadeInRight"> <i class="ti-arrow-right" aria-hidden="true"></i> </div>
-                        <div class="swiper-button-prev animate-box" data-animate-effect="fadeInLeft"> <i class="ti-arrow-left" aria-hidden="true"></i> </div>
-                    </div>
-                </div>
-            </section>
-    </div>
-    <!-- About -->
-    <div class="section-padding bg-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <h2>About Bethany</h2>
-                    <hr class="line line-hr-left">
-                    <h5>We would love to meet up and chat about how we can make your dream wedding happen!</h5>
-                    <p>Wedding elit miss eget the solin missen citudino sellus rutrum in lacus son nemine vestibulum eleifen ornare drana company tortor semper at. Suspendise asinim the sedisem tinciun the drana numune consue.</p>
-                    <p>Destination elit miss eget the solin miss citudino phasellus rutrum into lacus miss. Vestibulum eleifen ornare drana sempe numune consue.</p>
-                    <p>Event elit miss eget the solin miss citudino phasellus rutrum into the lacusi events vestibulum eleifen ornare drana company tortori sempeto numune consue design elit miss eget the solin miss citudino sellus rutrum in lacus miss vestibulum in the ornare drana company tortor semper at.</p>
-                </div>
-                <div class="col-md-5 offset-1">
-                    <div class="about-img">
-                        <div class="img">
-                            <img src="images/about.jpg" alt="">
-                        </div>
-                        <div class="about-img-2">Bethany Dan</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Wedding Dates -->
-    <div class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 mb-30">
-                    <h2>Wedding Dates</h2>
-                    <hr class="line line-hr-left">
-                    <p>Your at-a-glance guide to where I stand on all the truly important things. Wedding elit miss the eget the solin miss citudino selus rutrum in miss vestibulum eleifen ornare torto.</p>
-                </div>
-                <div class="col-md-6 offset-md-1">
-                    <table class="wedding-date-table">
-                        <tbody>
-                            <tr class="animate-box" data-animate-effect="fadeInUp">
-                                <td>
-                                    <h6>1. SWITZERLAND<br><span>{September : 2022}</span></h6>
-                                </td>
-                                <td>
-                                    <p>Bauen</p>
-                                </td>
-                            </tr>
-                            <tr class="animate-box" data-animate-effect="fadeInUp">
-                                <td>
-                                    <h6>2. ITALY<br><span>{October : 2022}</span></h6>
-                                </td>
-                                <td>
-                                    <p>Rome</p>
-                                </td>
-                            </tr>
-                            <tr class="animate-box" data-animate-effect="fadeInUp">
-                                <td>
-                                    <h6>3. AMSTERDAM<br><span>{November : 2022}</span></h6>
-                                </td>
-                                <td>
-                                    <p>Netherlands</p>
-                                </td>
-                            </tr>
-                            <tr class="animate-box" data-animate-effect="fadeInUp">
-                                <td>
-                                    <h6>4. SPAIN<br><span>{December : 2022}</span></h6>
-                                </td>
-                                <td>
-                                    <p>Barcelona</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonials -->
-    <div class="testimonials section-padding bg-1">
-        <div class="background bg-fixed bg-img" data-overlay-dark="2" data-background="images/banner/2.jpg"> </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2>Client Love</h2>
-                    <hr class="line line-hr-center">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="testim">
-                        <div class="box">
-                            <div class="item">
-                                <div class="cont">
-                                    <div class="img"> <img src="images/team/05.jpg" alt=""> </div>
-                                    <div class="info">
-                                        <h5>Eloise & Michael</h5> <span>Bern, 2022</span>
-                                    </div>
-                                </div>
-                                <p>Quality eu nunc bibe endum in finibus elit miss eget the solin miss citudin elit. Phasellus rutrum in lacus ut miss. Lestibulum tortor semper the drana. Wedding fusce ornare ut tortor hendreri.</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="item">
-                                <div class="cont">
-                                    <div class="img"> <img src="images/team/06.jpg" alt=""> </div>
-                                    <div class="info">
-                                        <h5>Katie & Frank</h5> <span>London, 2022</span>
-                                    </div>
-                                </div>
-                                <p>Wedding eu nunc bibe endum in finibus elit miss eget the solin miss citudin elit. Phasellus rutrum in lacus ut miss. Lestibulum tortor semper the drana. Wedding fusce ornare ut tortor hendreri.</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="item">
-                                <div class="cont">
-                                    <div class="img"> <img src="images/team/07.jpg" alt=""> </div>
-                                    <div class="info">
-                                        <h5>Alisea & James</h5> <span>France, 2022</span>
-                                    </div>
-                                </div>
-                                <p>Event eu nunc bibe endum in finibus elit miss eget the solin miss citudin elit. Phasellus rutrum in lacus ut miss. Lestibulum tortor semper the drana. Wedding fusce ornare ut tortor hendreri.</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="item">
-                                <div class="cont">
-                                    <div class="img"> <img src="images/team/08.jpg" alt=""> </div>
-                                    <div class="info">
-                                        <h5>Latoya & James</h5> <span>Roma, 2022</span>
-                                    </div>
-                                </div>
-                                <p>Ceremony eu nunc bibe endum in finibus elit miss eget the solin miss citudin elit. Phasellus rutrum in lacus ut miss. Lestibulum tortor semper the drana. Wedding fusce ornare ut tortor hendreri.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- News & Blog -->
+    <!-- Header Banner -->
+    
+    <!-- Blog -->
     <div class="blog section-padding">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Latest News</h2>
-                    <hr class="line line-hr-left">
-                </div>
-            </div>
             <div class="row mb-5">
-                <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                    <div class="img left"><a href="post.html"><img src="images/blog/a.jpg" alt=""></a></div>
+                <div class="col-md-6">
+                    <div class="img left">
+                        <a href="post.html"><img src="images/blog/a.jpg" alt=""></a>
+                    </div>
                 </div>
-                <div class="col-md-6 valign animate-box" data-animate-effect="fadeInRight">
+                <div class="col-md-6 valign">
                     <div class="content">
                         <div class="date">
                             <h3>03</h3>
@@ -277,15 +99,15 @@
                         </div>
                         <div class="cont">
                             <div class="info">
-                                <h6><a href="blog.html">by Bethany</a> / <a href="blog.html" class="tags">Wedding</a></h6>
+                                <h6><a href="blog.html">by Othelia</a> / <a href="blog.html" class="tags">Wedding</a></h6>
                             </div>
                             <h4>My Favourite Special Bridesmaid Gifts</h4> <a href="post.html" class="more" data-splitting><span>Read More</span></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 order2 valign animate-box" data-animate-effect="fadeInLeft">
+            <div class="row mb-5">
+                <div class="col-md-6 order2 valign">
                     <div class="content">
                         <div class="date">
                             <h3>05</h3>
@@ -295,62 +117,83 @@
                             <div class="info">
                                 <h6><a href="blog.html">bethany</a> / <a href="blog.html" class="tags">Wedding</a></h6>
                             </div>
-                            <h4>Why would anyone hire a wedding planner?</h4>
-                            <a href="post.html" class="more" data-splitting><span>Read More</span></a>
+                            <h4>Why would anyone hire a wedding planner?</h4> <a href="post.html" class="more" data-splitting><span>Read More</span></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 order1 animate-box" data-animate-effect="fadeInRight">
-                    <div class="img"><a href="post.html"><img src="images/blog/b.jpg" alt=""></a></div>
+                <div class="col-lg-6 order1">
+                    <div class="img">
+                        <a href="post.html"><img src="images/blog/b.jpg" alt=""></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Clients -->
-    <div class="clients">
-        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <div class="img left">
+                        <a href="post.html"><img src="images/blog/c.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-6 valign">
+                    <div class="content">
+                        <div class="date">
+                            <h3>07</h3>
+                            <h6>Dec 2022</h6>
+                        </div>
+                        <div class="cont">
+                            <div class="info">
+                                <h6><a href="blog.html">by bethany</a> / <a href="blog.html" class="tags">Wedding</a></h6>
+                            </div>
+                            <h4>A guide to men’s wedding ring styles</h4> <a href="post.html" class="more" data-splitting><span>Read More</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md-6 order2 valign">
+                    <div class="content">
+                        <div class="date">
+                            <h3>09</h3>
+                            <h6>Dec 2022</h6>
+                        </div>
+                        <div class="cont">
+                            <div class="info">
+                                <h6><a href="blog.html">bethany</a> / <a href="blog.html" class="tags">Wedding</a></h6>
+                            </div>
+                            <h4>Classic and stylish wedding inspiration</h4> <a href="post.html" class="more" data-splitting><span>Read More</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order1">
+                    <div class="img">
+                        <a href="post.html"><img src="images/blog/d.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination -->
             <div class="row">
-                <div class="col-md-12 owl-carousel owl-theme">
-                    <!-- Clients -->
-                    <div class="client-logo">
-                        <a href="index.html#"><img src="images/clients/1.jpg" alt=""></a>
-                    </div>
-                    <div class="client-logo">
-                        <a href="index.html#"><img src="images/clients/2.jpg" alt=""></a>
-                    </div>
-                    <div class="client-logo">
-                        <a href="index.html#"><img src="images/clients/3.jpg" alt=""></a>
-                    </div>
-                    <div class="client-logo">
-                        <a href="index.html#"><img src="images/clients/4.jpg" alt=""></a>
-                    </div>
-                    <div class="client-logo">
-                        <a href="index.html#"><img src="images/clients/5.jpg" alt=""></a>
-                    </div>
-                    <div class="client-logo">
-                        <a href="index.html#"><img src="images/clients/6.jpg" alt=""></a>
-                    </div>
+                <div class="col-md-12 text-center">
+                    <ul class="blog-pagination-wrap align-center">
+                        <li><a href="blog.html#"><i class="ti-arrow-left"></i></a></li>
+                        <li><a href="blog.html#">1</a></li>
+                        <li><a href="blog.html#" class="active">2</a></li>
+                        <li><a href="blog.html#">3</a></li>
+                        <li><a href="blog.html#"><i class="ti-arrow-right"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
     <!-- Footer -->
-    <footer class="main-footer dark">
+    <!-- <footer class="main-footer dark">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 mb-30">
                     <div class="item abot">
                         <div class="logo mb-20">
-                            <!-- <img src="images/logo-light.png" alt=""> -->
                             <h2>elifotografia</h2>
                         </div>
                         <p>We believe that it is all about the BIG DREAMS and the small details!</p>
-                        <div class="social-icon">
-                            <a href="index.html"><i class="ti-facebook"></i></a>
-                            <a href="index.html"><i class="ti-twitter"></i></a>
-                            <a href="index.html"><i class="ti-instagram"></i></a>
-                            <a href="index.html"><i class="ti-pinterest"></i></a>
-                        </div>
+                        <div class="social-icon"> <a href="index.html"><i class="ti-facebook"></i></a> <a href="index.html"><i class="ti-twitter"></i></a> <a href="index.html"><i class="ti-instagram"></i></a> <a href="index.html"><i class="ti-pinterest"></i></a> </div>
                     </div>
                 </div>
                 <div class="col-md-2 offset-md-1 mb-30">
@@ -395,13 +238,13 @@
                     </div>
                     <div class="col-md-4">
                         <div class="text-right-left">
-                            <p><a href="index.html#">Terms &amp; Conditions</a></p>
+                            <p><a href="blog.html#">Terms &amp; Conditions</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- toTop -->
     <a href="index.html#" class="totop">TOP</a>
     <!-- jQuery -->
@@ -416,38 +259,6 @@
     <script src="modules/magnific-popup/jquery.magnific-popup.js"></script>
     <script src="modules/masonry/masonry.pkgd.min.js"></script>
     <script src="modules/youtubepopup/YouTubePopUp.js"></script>
-    <script src="modules/swiper/swiper.min.js"></script>
     <script src="js/script.js"></script>
-    <script type="text/javascript">
-        (function ($) {
-            if (window.innerWidth < 1200) {
-                new Swiper(".swiper-container", {
-                    direction: "horizontal",
-                    slidesPerView: 1,
-                    nextButton: ".swiper-button-next",
-                    prevButton: ".swiper-button-prev",
-                    paginationClickable: !0,
-                    spaceBetween: 0,
-                    speed: 3500,
-                    autoplay: 7000,
-                    loop: !0
-                })
-            } else {
-                new Swiper(".swiper-container", {
-                    direction: "horizontal",
-                    slidesPerView: 1,
-                    parallax: !0,
-                    nextButton: ".swiper-button-next",
-                    prevButton: ".swiper-button-prev",
-                    paginationClickable: !0,
-                    spaceBetween: 0,
-                    speed: 3500,
-                    parallax: !0,
-                    autoplay: 7000,
-                    loop: !0
-                })
-            };	
-        })(jQuery);
-    </script>
 </body>
 </html>
