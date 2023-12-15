@@ -18,7 +18,15 @@
     <link href="modules/youtubepopup/YouTubePopUp.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144098545-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-144098545-1');
+    </script>
 </head>
 
 <body>
@@ -62,7 +70,7 @@
             <div class="row">
                 <div class="col-md-12" style="text-align: center;     padding-top: 70px;">                
 
-                    <h3>Contrato & liberación de servicio fotográfico para maternidad</h3>
+                    <h3>Contrato de servicio fotografico para maternidad</h3>
                     <hr class="line line-hr-center">
                 </div>
             </div>
@@ -110,34 +118,7 @@
                                         <div class="col-md-6 form-group">
                                             <input name="email" type="email" placeholder="E-mail *" required> 
                                         </div>
-                                        <div class="col-md-6 form-group">
-                                            <input name="email" type="email" placeholder="Cuantos niños 1 o +?" required> 
-                                        </div>
-                                        
-                                        <div class="col-md-6">
-                                            <div class="n-summary">
-                                                <span>¿tiene algun tipo de alegia?</span>
-                                                <label>
-                                                    <input type="radio" id="clientType" value="nuevo" name="clientType" required 
-                                                           data-parsley-required 
-                                                           data-parsley-required-message="Por favor, selecciona un tipo de cliente">
-                                                    <span class="checkmark">SI</span>
-                                                </label>
-                                                <label>
-                                                    <input type="radio" id="clientType" value="existente" name="clientType" required 
-                                                           data-parsley-required 
-                                                           data-parsley-required-message="Por favor, selecciona un tipo de cliente">
-                                                    <span class="checkmark">NO</span>
-                                                </label>
-                                            </div>
-
-                                        </div>
-                                        <div class="col-md-12 form-group">
-                                            <input name="name" type="text" placeholder="Nombres de los Menores: *" required> 
-                                        </div>
-                                        <div class="col-md-12 form-group">
-                                            <textarea name="message" id="message" cols="30" rows="4" placeholder="Indique por favor que tipo de alergias *" required></textarea>
-                                        </div>
+                                        <h4 class="mb-30">Nombres de los Menores</h4>
                                         <div class="col-md-12">
                                             <div class="wizard-form-input position-relative form-group has-float-label mt-0 n-select-option">Lugar de la sesion:
                                                 <select id="" name="" class="form-control" required data-parsley-required data-parsley-required-message="Por favor, seleccione un tipo de servicio">

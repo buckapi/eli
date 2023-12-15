@@ -2422,12 +2422,12 @@ a.btn.disabled,fieldset:disabled a.btn {
     color: #fff;
     background-color: #a2783a;
     border-color: #cd8d3a;
-    d}
+    }
 
 .btn-secondary: hover {
     color:#fff;
-    background-color: #5a6268;
-    border-color: #545b62
+    background-color: #a2783a;
+    border-color: #cd8d3a;
 }
 
 .btn-secondary.focus,.btn-secondary:focus {

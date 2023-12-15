@@ -18,7 +18,15 @@
     <link href="modules/youtubepopup/YouTubePopUp.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144098545-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-144098545-1');
+    </script>
 </head>
 
 <body>
@@ -62,7 +70,7 @@
             <div class="row">
                 <div class="col-md-12" style="text-align: center;     padding-top: 70px;">                
 
-                    <h3>Contrato & liberación de servicio fotográfico para maternidad</h3>
+                    <h3>Contrato & liberación de servicio fotográfico para Boda </h3>
                     <hr class="line line-hr-center">
                 </div>
             </div>
@@ -83,14 +91,20 @@
                                     </div>
                                     <!-- Form elements -->
                                     <div class="row">
+                                        <div class="col-md-12 form-group">
+                                            <input name="name" type="text" placeholder="Nombre de la Novia: *" required> 
+                                        </div>
                                         <div class="col-md-6 form-group">
-                                            <input name="name" type="text" placeholder="Nombre del Modelo # 1: *" required> 
+                                            <input type="text" id="datepicker" required placeholder="Fecha de nacimiento">
                                         </div>
                                         <div class="col-md-6 form-group">
                                             <input name="phone" type="text" placeholder="Teléfono: *" required> 
                                         </div>
+                                        <div class="col-md-12 form-group">
+                                            <input name="name" type="text" placeholder="Nombre del Novio: *" required> 
+                                        </div>
                                         <div class="col-md-6 form-group">
-                                            <input name="name" type="text" placeholder="Nombre del Modelo# 2: *" required> 
+                                            <input type="text" id="datepicker" required placeholder="Fecha de nacimiento">
                                         </div>
                                         <div class="col-md-6 form-group">
                                             <input name="phone" type="text" placeholder="Teléfono: *" required> 
@@ -110,85 +124,85 @@
                                         <div class="col-md-6 form-group">
                                             <input name="email" type="email" placeholder="E-mail *" required> 
                                         </div>
-                                        <div class="col-md-6 form-group">
-                                            <input name="email" type="email" placeholder="Cuantos niños 1 o +?" required> 
-                                        </div>
+                                        <div class="col-md-12 form-group">
+                                            <input name="name" type="text" placeholder="Dirección del evento: *" required> 
+                                        </div>                                       
                                         
-                                        <div class="col-md-6">
-                                            <div class="n-summary">
-                                                <span>¿tiene algun tipo de alegia?</span>
-                                                <label>
-                                                    <input type="radio" id="clientType" value="nuevo" name="clientType" required 
-                                                           data-parsley-required 
-                                                           data-parsley-required-message="Por favor, selecciona un tipo de cliente">
-                                                    <span class="checkmark">SI</span>
-                                                </label>
-                                                <label>
-                                                    <input type="radio" id="clientType" value="existente" name="clientType" required 
-                                                           data-parsley-required 
-                                                           data-parsley-required-message="Por favor, selecciona un tipo de cliente">
-                                                    <span class="checkmark">NO</span>
-                                                </label>
-                                            </div>
-
-                                        </div>
-                                        <div class="col-md-12 form-group">
-                                            <input name="name" type="text" placeholder="Nombres de los Menores: *" required> 
-                                        </div>
-                                        <div class="col-md-12 form-group">
-                                            <textarea name="message" id="message" cols="30" rows="4" placeholder="Indique por favor que tipo de alergias *" required></textarea>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="wizard-form-input position-relative form-group has-float-label mt-0 n-select-option">Lugar de la sesion:
-                                                <select id="" name="" class="form-control" required data-parsley-required data-parsley-required-message="Por favor, seleccione un tipo de servicio">
-                                                    
-                                                    <option value="Estudio">
-                                                        Estudio</option>
-                                                    <option value="Exterior">Exterior</option>
-                                                    
-                                                </select>
-                                            </div>
-                                        </div>                                        
-                                        <div class="col-md-12 form-group">
-                                            <input name="name" type="text" placeholder="Dirección: *" required> 
+                                         <div class="col-md-12 form-group">
+                                            <input type="text" id="datepicker" required placeholder="Seleccione la fecha del evento">
                                         </div>
                                          <div class="col-md-6 form-group">
-
-                                            <input type="text" id="datepicker" required placeholder="Seleccione la fecha">
-                                            <!-- <input name="name" type="text" placeholder="Fecha de la sesion: dd/mm/aa" >  -->
+                                            <input name="name" type="text" placeholder="Hora de inicio: *" required> 
                                         </div>
-                                         <div class="col-md-4 form-group">
-                                            <input name="name" type="text" placeholder="Hora: *" required> 
-                                        </div>
-                                        <div class="col-md-2 form-group">
-                                            <!-- <input name="name" type="text" placeholder=" *" required>  -->
-                                            <div class="wizard-form-input position-relative form-group has-float-label mt-0 n-select-option">
-                                                <select id="" name="" class="form-control" required data-parsley-required data-parsley-required-message="Por favor, seleccione un tipo de servicio">
-                                                    
-                                                    <option value="Estudio">
-                                                        am</option>
-                                                    <option value="Exterior">pm</option>
-                                                    
-                                                </select>
-                                            </div>
+                                        <div class="col-md-6 form-group">
+                                            <input name="name" type="text" placeholder="Hora de finalización: *" required> 
                                         </div>
                                         
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-4" style="text-align: justify;">
-                                    <p>Yo: <input name="name" type="text" placeholder="Nombre : *" required> 
-                                    autorizo a ELIFOTOGRAFÍA para ser mi fotógrafo/a. Tanto mi esposo como yo somos conscientes de los posibles "riesgos" asociados con esta sesión de fotos, ya que estamos expuestos a situaciones imprevistas. Somos conscientes de que la sesión podría llevarse a cabo al aire libre, lo que implica estar expuestos a condiciones climáticas extremas y a la posible presencia de objetos como arbustos y piedras, entre otros. Asimismo, sabemos que el fotógrafo podría utilizar objetos como parte de la sesión de fotos. </p>
-                                    <p><b>1. Propósito y Términos del Servicio: </b>  Este documento tiene como finalidad  establecer los términos y condiciones para la realización del evento, incluyendo la fecha, el lugar y los servicios contratados. Contratamos a ELIFOTOGRAFÍA para cubrir  este evento. También consideramos la posibilidad de tomar fotografías en diversas áreas recreativas, como playas, bosques, puentes, parques, ríos, tinas, entre otros. Se podrían utilizar diversos objetos en la sesión, como escaleras, sillas, hamacas,  mecedoras, camas, lámparas, mesas, cajas, bicicletas, automóviles, humo de colores, entre otros, tanto dentro como fuera de una casa o estudio. </p>
-                                    <p><b>2. Responsabilidad por Riesgos:</b>  Tanto ELIFOTOGRAFÍA como sus ayudantes no se hacen responsables de ningún accidente o incidente que pueda afectar el desarrollo del embarazo o causar inconvenientes a la madre o a los participantes. </p>
-                                    <p><b>3. Derechos de Autor y Uso de Fotografías:</b>  El fotógrafo conserva los derechos de autor de las fotografías, pero otorga al cliente derechos ilimitados, pero no exclusivos para usar o reproducir las fotografías por las cuales el cliente paga. El fotógrafo también tiene el derecho de utilizar las fotografías en sus redes sociales.</p>
+                                    <p>Yo: <input name="name" type="text" placeholder="Nombre *" required> contrato y autorizo a ELIFOTOGRAFÍA para ser la fotógrafa de mi evento. Al mismo tiempo, libero los derechos de autor de las fotografías allí tomadas. </p>
+                                    <p><b>1. Propósito y Términos del Servicio:</b> Este documento establece los términos y condiciones por los cuales se llevará a cabo la ceremonia de la boda, incluyendo la fecha, el lugar, la recepción y los servicios contratados. La pareja contrata a ELIFOTOGRAFÍA, quien se compromete a cubrir el evento según lo acordado. </p>
+                                    <p><b>2. Depósito y Cancelación:</b>  El depósito no es reembolsable en caso de cancelación o cambio del compromiso por parte del cliente. Si ELIFOTOGRAFÍA no se presenta en el lugar y hora especificados sin notificar al cliente con al menos 24 horas de antelación, el depósito será reembolsado al cliente.  </p>
+                                    <p><b>3. Entrega de Fotografías: </b> Las fotografías de prueba se entregarán al cliente en formato digital y se almacenarán en un sistema de almacenamiento en la nube durante 3 meses.</p>
+                                    <p><b>4. Cooperación del Cliente:</b> El cliente deberá colaborar y cooperar con  ELIFOTOGRAFÍA para obtener las fotografías deseadas. Esto incluye especificar personas o escenas a fotografiar, posar según la dirección del fotógrafo y proporcionar  una persona para guiar al fotógrafo hacia las escenas deseadas. ELIFOTOGRAFÍA no  será responsable de las fotografías que no se tomen debido a la falta de asistencia o cooperación razonable por parte del cliente o la intervención de los invitados.</p>
+                                    <p><b>5. Derechos de Autor y Uso de Fotografías:</b> ELIFOTOGRAFÍA conserva los derechos de autor de las fotografías, pero otorga al cliente derechos ilimitados, no exclusivos, para usar o reproducir las fotografías por las que el cliente paga. El fotógrafo tiene derecho a utilizar las fotografías en sus redes sociales. </p>
+                                    <p><b>Ley Aplicable:</b> Este contrato se regirá por las leyes del condado y el estado aplicable. </p>
+                                    <p><b> Responsabilidad:</b> ELIFOTOGRAFIA no se hace responsable por accidentes o incidentes antes, durante o después del evento. </p>
+
                                     
                                     
                                 </div>
                                 <div class="col-md-12">
                                     <h2 style="text-align: center;">Al firmar este contrato</h2>
-                                    <p style="text-align: justify;"> Yo,<input name="name" type="text" placeholder="Nombre : *" required> confirmo que he leído y recibido información previa sobre los riesgos asociados con la sesión de fotos, así como sobre los sitios y objetos que podrían ser utilizados durante la misma, ya sea de mi propiedad o propiedad de ELIFOTOGRAFÍA. Todas las partes involucradas estamos conscientes y acordamos tomar las precauciones necesarias. 
+                                    <p style="text-align: justify;"> Confirmo que he leído y recibido información previa sobre los riesgos asociados con la sesión de fotos, así como sobre los sitios y objetos que podrían ser utilizados durante la misma, ya sea de mi propiedad o propiedad de ELIFOTOGRAFÍA. Todas las partes involucradas estamos conscientes y acordamos tomar las precauciones necesarias. 
                                     </p>
                                 </div>
+                                <div class="col-md-6">
+                                    Seleccione el servicio que se ajuste a su presupuesto:
+                                    <div class="col-md-12">
+                                    <div class="wizard-form-input position-relative form-group has-float-label mt-0 n-select-option">
+                                        <select id="" name="" class="form-control" required data-parsley-required data-parsley-required-message="Por favor, seleccione un tipo de servicio">
+                                            <option value="Estudio">Compromiso $299</option>
+                                            <option value="Estudio">Civil $600</option>
+                                            <option value="Exterior">Premium $1.500</option>
+                                            <option value="Exterior">Delux $2.500</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="n-summary">
+                                        <span>Seleccione el primer deposito</span>
+                                        <label>
+                                            <input type="radio" id="clientType" value="nuevo" name="clientType" required 
+                                                   data-parsley-required 
+                                                   data-parsley-required-message="Por favor, selecciona un tipo de cliente">
+                                            <span class="checkmark">20%</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" id="clientType" value="existente" name="clientType" required 
+                                                   data-parsley-required 
+                                                   data-parsley-required-message="Por favor, selecciona un tipo de cliente">
+                                            <span class="checkmark">30%</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" id="clientType" value="existente" name="clientType" required 
+                                                   data-parsley-required 
+                                                   data-parsley-required-message="Por favor, selecciona un tipo de cliente">
+                                            <span class="checkmark">50%</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <input name="name" type="text" placeholder="Firma del Cliente: *" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input name="name" type="text" placeholder="Firma del Fotografo: *" required>
+                                </div>
+                                
                                 <div class="col-md-12" style="text-align:center;">
                                     <input name="submit" type="submit" value="Contratar">
                                 </div>
