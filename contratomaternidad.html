@@ -17,6 +17,10 @@
     <link href="modules/magnific-popup/magnific-popup.css" rel="stylesheet">
     <link href="modules/youtubepopup/YouTubePopUp.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Agrega los estilos de Bootstrap Datepicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     
 </head>
@@ -176,18 +180,51 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-4" style="text-align: justify;">
+                                    <h3 style="text-align: center;">Términos y condiciones</h3>
                                     <p>Yo: <input name="name" type="text" placeholder="Nombre : *" required> 
                                     autorizo a ELIFOTOGRAFÍA para ser mi fotógrafo/a. Tanto mi esposo como yo somos conscientes de los posibles "riesgos" asociados con esta sesión de fotos, ya que estamos expuestos a situaciones imprevistas. Somos conscientes de que la sesión podría llevarse a cabo al aire libre, lo que implica estar expuestos a condiciones climáticas extremas y a la posible presencia de objetos como arbustos y piedras, entre otros. Asimismo, sabemos que el fotógrafo podría utilizar objetos como parte de la sesión de fotos. </p>
                                     <p><b>1. Propósito y Términos del Servicio: </b>  Este documento tiene como finalidad  establecer los términos y condiciones para la realización del evento, incluyendo la fecha, el lugar y los servicios contratados. Contratamos a ELIFOTOGRAFÍA para cubrir  este evento. También consideramos la posibilidad de tomar fotografías en diversas áreas recreativas, como playas, bosques, puentes, parques, ríos, tinas, entre otros. Se podrían utilizar diversos objetos en la sesión, como escaleras, sillas, hamacas,  mecedoras, camas, lámparas, mesas, cajas, bicicletas, automóviles, humo de colores, entre otros, tanto dentro como fuera de una casa o estudio. </p>
                                     <p><b>2. Responsabilidad por Riesgos:</b>  Tanto ELIFOTOGRAFÍA como sus ayudantes no se hacen responsables de ningún accidente o incidente que pueda afectar el desarrollo del embarazo o causar inconvenientes a la madre o a los participantes. </p>
                                     <p><b>3. Derechos de Autor y Uso de Fotografías:</b>  El fotógrafo conserva los derechos de autor de las fotografías, pero otorga al cliente derechos ilimitados, pero no exclusivos para usar o reproducir las fotografías por las cuales el cliente paga. El fotógrafo también tiene el derecho de utilizar las fotografías en sus redes sociales.</p>
-                                    
+                                </div>
+                                <div class="col-md-6 mb-4" style="text-align: justify;">
+                                   <h3 style="text-align: center;"> Política de Reembolso y Cambio de Fecha</h3>
+                                  
+                                       <p><b>1.</b> No se realizarán reembolsos una vez realizada la reserva del servicio fotográfico.</p>
+                                       <p><b>2.</b> Se permite el cambio de fecha de la sesión fotográfica siempre y cuando se notifique a ELIFOTOGRAFÍA con un mínimo de una semana de anticipación a la fecha originalmente acordada.</p>
+                                       <p><b>3.</b> El cambio de fecha estará sujeto a la disponibilidad de ELIFOTOGRAFÍA. Las nuevas fechas para la sesión serán propuestas por el fotógrafo, considerando su disponibilidad de tiempo.</p>
+                                       <p><b>4.</b> El cliente debe aceptar las fechas alternativas propuestas por ELIFOTOGRAFÍA y confirmar la nueva fecha acordada dentro de un plazo de tiempo definido por ambas partes.</p>
+                                       <p><b>5.</b> En caso de que ELIFOTOGRAFÍA no pueda reprogramar la sesión debido a limitaciones de su disponibilidad, se podrán explorar opciones alternativas de acuerdo mutuo.</p>
+
+                                </div>
+                                <div class="col-md-6 mb-4" style="text-align: justify;">
+                                   <h3 style="text-align: center;"> Política de Pago</h3>
+                                   
+                                    <p><b>1.</b> El cliente esta de acuerdo con el precio del servicio seleccionado por su parte y se compromete a realizar un anticipo del precio total del servicio e esta contratación. </p>
+                                    <p><b>2.</b> El monto del anticipo será del 25%, 30% o 50% del costo total del servicio, según lo acordado entre las partes al momento de la contratación. El anticipo se considerará como garantía para reservar la fecha y hora acordadas para la sesión fotográfica.</p>
+                                    <p><b>3.</b>El pago restante del servicio fotográfico, equivalente al porcentaje pendiente del monto total, deberá ser cancelado al finalizar la sesión fotográfica y antes de la entrega final del producto acordado.</p>
+                                    <p><b>4.</b> En caso de cancelación por parte del cliente, el anticipo no será reembolsable.
+                                    Si por alguna razón ELIFOTOGRAFÍA no puede cumplir con la sesión acordada, se procederá a la devolución completa del anticipo realizado por el cliente y sera notificado previamente.</p>
                                     
                                 </div>
+
                                 <div class="col-md-12">
-                                    <h2 style="text-align: center;">Al firmar este contrato</h2>
-                                    <p style="text-align: justify;"> Yo,<input name="name" type="text" placeholder="Nombre : *" required> confirmo que he leído y recibido información previa sobre los riesgos asociados con la sesión de fotos, así como sobre los sitios y objetos que podrían ser utilizados durante la misma, ya sea de mi propiedad o propiedad de ELIFOTOGRAFÍA. Todas las partes involucradas estamos conscientes y acordamos tomar las precauciones necesarias. 
+                                    <h3 style="text-align: center;">Al firmar este contrato</h3>
+                                    Confirmo que he leído y recibido información previa sobre los riesgos asociados con la sesión de fotos, así como sobre los sitios y objetos que podrían ser utilizados durante la misma, ya sea de mi propiedad o propiedad de ELIFOTOGRAFÍA. Todas las partes involucradas estamos conscientes y acordamos tomar las precauciones necesarias. 
                                     </p>
+                                </div>
+                                <div class="col-md-12 wizard-identity wizard-content-form" style="padding-top:25px; text-align: right;">
+                                    <div class="taxable-area">
+                                        <div class="row">
+                                            <label>
+                                                <input type="checkbox" class="tax-check" value="incomeStatement" name="incomeStatement" id="incomeStatement" 
+                                                       required
+                                                       data-parsley-required-message="Debes marcar esta casilla para continuar">
+                                                <span class="checkbox-box-border"></span>
+                                                <span class="taxable-option">Acepto los términos y condiciones.</span>
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-12" style="text-align:center;">
                                     <input name="submit" type="submit" value="Contratar">
@@ -214,6 +251,19 @@
     <script src="modules/masonry/masonry.pkgd.min.js"></script>
     <script src="modules/youtubepopup/YouTubePopUp.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Agrega la librería de Bootstrap Datepicker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script>
+      // Inicializar el selector de fechas
+      $('#datepicker').datepicker({
+        format: 'dd/mm/yyyy',
+        autoclose: true
+      });
+    </script>
 </body>
 </html>
 
