@@ -76,7 +76,7 @@
                         <form method="post" class="contact__form" action="">
                             <div class="row">
                                 <div class="col-md-5 offset-md-1">
-                                    <h4 class="mb-30">Conforme a lo mencionado, debe llenar el siguiente contrato:</h4>
+                                    <h4 class="mb-30">Conforme a lo mencionado, debe llenar el siguiente formulario para reserva y contratación:</h4>
                                     <!-- Form message -->
                                     <div class="row">
                                         <div class="col-12">
@@ -120,7 +120,7 @@
                                         
                                         <div class="col-md-6">
                                             <div class="n-summary">
-                                                <span>¿tiene algun tipo de alegia?</span>
+                                                <span>¿Tienen algún tipo de alergia?</span>
                                                 <label>
                                                     <input type="radio" id="clientType" value="nuevo" name="clientType" required 
                                                            data-parsley-required 
@@ -140,7 +140,7 @@
                                             <input name="name" type="text" placeholder="Nombres de los Menores: *" required> 
                                         </div>
                                         <div class="col-md-12 form-group">
-                                            <textarea name="message" id="message" cols="30" rows="4" placeholder="Indique por favor que tipo de alergias *" required></textarea>
+                                            <textarea name="message" id="message" cols="30" rows="4" placeholder="Indique por favor que tipo de alergias o virus *" required></textarea>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="wizard-form-input position-relative form-group has-float-label mt-0 n-select-option">Lugar de la sesion:
@@ -181,7 +181,9 @@
                                 </div>
                                 <div class="col-md-6 mb-4" style="text-align: justify;">
                                     <h3 style="text-align: center;">Términos y condiciones</h3>
-                                    <p> Los modelos suscritos a este contrato, autorizamos a ELIFOTOGRAFÍA para ser mi fotógrafo/a. Tanto mi esposo como yo somos conscientes de los posibles "riesgos" asociados con esta sesión de fotos, ya que estamos expuestos a situaciones imprevistas. Somos conscientes de que la sesión podría llevarse a cabo al aire libre, lo que implica estar expuestos a condiciones climáticas extremas y a la posible presencia de objetos como arbustos y piedras, entre otros. Asimismo, sabemos que el fotógrafo podría utilizar objetos como parte de la sesión de fotos. </p>
+                                    <p> Los modelos suscritos a este contrato, autorizamos a ELIFOTOGRAFÍA para ser mi fotógrafo/a. Tanto mi esposo como yo:
+                                        <input name="name" type="text" placeholder="Nombre de madre" required> 
+                                    somos conscientes de los posibles "riesgos" asociados con esta sesión de fotos, ya que estamos expuestos a situaciones imprevistas. Somos conscientes de que la sesión podría llevarse a cabo al aire libre, lo que implica estar expuestos a condiciones climáticas extremas y a la posible presencia de objetos como arbustos y piedras, entre otros. Asimismo, sabemos que el fotógrafo podría utilizar objetos como parte de la sesión de fotos. </p>
                                     <p><b>1. Propósito y Términos del Servicio: </b>  Este documento tiene como finalidad  establecer los términos y condiciones para la realización del evento, incluyendo la fecha, el lugar y los servicios contratados. Contratamos a ELIFOTOGRAFÍA para cubrir  este evento. También consideramos la posibilidad de tomar fotografías en diversas áreas recreativas, como playas, bosques, puentes, parques, ríos, tinas, entre otros. Se podrían utilizar diversos objetos en la sesión, como escaleras, sillas, hamacas,  mecedoras, camas, lámparas, mesas, cajas, bicicletas, automóviles, humo de colores, entre otros, tanto dentro como fuera de una casa o estudio. </p>
                                     <p><b>2. Responsabilidad por Riesgos:</b>  
                                        <li> Tanto ELIFOTOGRAFÍA como sus ayudantes no se hacen responsables de ningún accidente o incidente que pueda afectar el desarrollo del embarazo o causar inconvenientes a la madre o a los participantes.</li>
@@ -211,12 +213,62 @@
                                     Si por alguna razón ELIFOTOGRAFÍA no puede cumplir con la sesión acordada, se procederá a la devolución completa del anticipo realizado por el cliente y sera notificado previamente.</p>
                                     
                                 </div>
+                                <div class="col-md-12">
+                                    <h3 style="text-align: center;">Responsabilidad por Daños a Equipos y Accesorios:</h3>
 
+                                    <li>En caso de que uno de los modelos o personas participantes en el evento cause daño, deterioro o pérdida de cualquier equipo o accesorio propiedad de ELIFOTOGRAFÍA durante la sesión fotográfica, se requerirá que la parte responsable cubra los costos de reparación o reemplazo de los equipos dañados.</li>
+                                    <li>Los equipos y accesorios proporcionados por ELIFOTOGRAFÍA deben ser tratados con el debido cuidado y respeto durante la sesión fotográfica.
+                                    En caso de daño agravado o pérdida total de los equipos o accesorios, la parte responsable deberá reembolsar a ELIFOTOGRAFÍA por el valor total del equipo o accesorio afectado, según lo determine ELIFOTOGRAFÍA o mediante una evaluación independiente.</li>
+                                    <li>Queda entendido que el fotógrafo contratado es el único fotógrafo oficial que brindara el servicio especificado en este contrato.</li>
+                                </div>
                                 <div class="col-md-12">
                                     <h3 style="text-align: center;">Al firmar este contrato</h3>
                                     Confirmo que he leído y recibido información previa sobre los riesgos asociados con la sesión de fotos, así como sobre los sitios y objetos que podrían ser utilizados durante la misma, ya sea de mi propiedad o propiedad de ELIFOTOGRAFÍA. Todas las partes involucradas estamos conscientes y acordamos tomar las precauciones necesarias. 
+                                     
                                     </p>
                                 </div>
+                                <div class="col-md-6">
+                                    Seleccione el servicio que se ajuste a su presupuesto:
+                                    <div class="wizard-form-input position-relative form-group has-float-label mt-0 n-select-option">
+                                        <select id="" name="" class="form-control" required data-parsley-required data-parsley-required-message="Por favor, seleccione un tipo de servicio">
+                                            <option value="Estudio">Luxury bath milk $499</option>
+                                            <option value="Estudio">Luxury bath milk $299</option>
+                                            <option value="Estudio">Estudio $299</option>
+                                            <option value="Estudio">Estudio #2 $399</option>
+                                            <option value="Exterior">Estudio #3 $199</option>
+                                            <option value="Exterior">Exterior #1 $299</option>
+                                            <option value="Exterior">Exterior #2 $299</option>
+                                            <option value="Exterior">Exterior #3 $199</option>
+                                            <option value="Exterior">Ocean City #1 $399</option>
+                                            <option value="Exterior">Chesapeake #1 $199</option>
+                                            <option value="Exterior">Chesapeake #2 $299</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                    
+                                    <div class="col-md-6">
+                                        <div class="n-summary">
+                                            <span>Seleccione el primer deposito</span>
+                                            <label>
+                                                <input type="radio" id="clientType" value="nuevo" name="clientType" required 
+                                                       data-parsley-required 
+                                                       data-parsley-required-message="Por favor, selecciona un tipo de cliente">
+                                                <span class="checkmark">20%</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="clientType" value="existente" name="clientType" required 
+                                                       data-parsley-required 
+                                                       data-parsley-required-message="Por favor, selecciona un tipo de cliente">
+                                                <span class="checkmark">30%</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="clientType" value="existente" name="clientType" required 
+                                                       data-parsley-required 
+                                                       data-parsley-required-message="Por favor, selecciona un tipo de cliente">
+                                                <span class="checkmark">50%</span>
+                                            </label>
+                                        </div>
+                                    </div>
                                 <div class="col-md-12 wizard-identity wizard-content-form" style="padding-top:25px; text-align: right;">
                                     <div class="taxable-area">
                                         <div class="row">
@@ -239,6 +291,19 @@
             </div>
         </div>
     </div>
+    <!-- Botón para abrir la modal -->
+<!-- Modal -->
+<div id="miModal" class="modal" style="padding-top: 112%;">
+  <div class="modal-contenido" style="background: #d9ffff; padding: 10px;">
+    <span class="cerrar" id="btnCerrarModal">&times;</span>
+    <h2>Aviso de Uso de Datos Personales</h2>
+    <p>Tu privacidad es importante para nosotros. Los datos proporcionados en este proceso de contratación serán utilizados únicamente para...</p>
+    <p>Al continuar, aceptas nuestros términos y condiciones de uso de datos personales.</p>
+    <button id="btnAceptarDatos">Aceptar</button>
+  </div>
+</div>
+
+
    
     <!-- toTop -->
     <a href="index.html#" class="totop">TOP</a>
@@ -267,6 +332,33 @@
         format: 'dd/mm/yyyy',
         autoclose: true
       });
+    </script>
+    <script>
+    // Obtiene elementos del DOM
+        var modal = document.getElementById("miModal");
+        var btnCerrarModal = document.getElementById("btnCerrarModal");
+        var btnAceptarDatos = document.getElementById("btnAceptarDatos");
+
+        // Función para abrir la modal
+        function abrirModal() {
+          modal.style.display = "block";
+        }
+
+        // Cierra la modal al hacer clic en el botón de cierre
+        btnCerrarModal.onclick = function() {
+          modal.style.display = "none";
+        };
+
+        // Cierra la modal al hacer clic en Aceptar
+        btnAceptarDatos.onclick = function() {
+          modal.style.display = "none";
+        };
+
+        // Abre la modal automáticamente al cargar la página
+        window.onload = function() {
+          abrirModal();
+        };
+
     </script>
 </body>
 </html>
