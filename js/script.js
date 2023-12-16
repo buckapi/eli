@@ -295,26 +295,6 @@
         .fail(fail_func);
     });
 
-// Obtiene elementos del DOM
-var modal = document.getElementById("miModal");
-var btnAbrirModal = document.getElementById("btnAbrirModal");
-var btnCerrarModal = document.getElementById("btnCerrarModal");
-var btnAceptarDatos = document.getElementById("btnAceptarDatos");
 
-// Abre la modal al hacer clic en el botón
-btnAbrirModal.onclick = function() {
-  modal.style.display = "block";
-};
-
-// Cierra la modal al hacer clic en el botón de cierre
-btnCerrarModal.onclick = function() {
-  modal.style.display = "none";
-};
-
-// Cierra la modal al hacer clic en Aceptar
-btnAceptarDatos.onclick = function() {
-  modal.style.display = "none";
-  // Aquí puedes realizar las acciones para continuar con la contratación.
-};
 
     

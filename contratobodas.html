@@ -206,7 +206,16 @@
             </div>
         </div>
     </div>
-   
+      <!-- Modal -->
+<div id="miModal" class="modal">
+  <div class="modal-contenido" style="background: #d9ffff;">
+    <span class="cerrar" id="btnCerrarModal">&times;</span>
+    <h2>Aviso de Uso de Datos Personales</h2>
+    <p>Tu privacidad es importante para nosotros. Los datos proporcionados en este proceso de contratación serán utilizados únicamente para este servicio</p>
+    <p>Al continuar, aceptas nuestros términos y condiciones de uso de datos personales.</p>
+    <button id="btnAceptarDatos">Aceptar</button>
+  </div>
+</div>
     <!-- toTop -->
     <a href="index.html#" class="totop">TOP</a>
     <!-- jQuery -->
@@ -234,6 +243,33 @@
         format: 'dd/mm/yyyy',
         autoclose: true
       });
+    </script>
+    <script>
+    // Obtiene elementos del DOM
+        var modal = document.getElementById("miModal");
+        var btnCerrarModal = document.getElementById("btnCerrarModal");
+        var btnAceptarDatos = document.getElementById("btnAceptarDatos");
+
+        // Función para abrir la modal
+        function abrirModal() {
+          modal.style.display = "block";
+        }
+
+        // Cierra la modal al hacer clic en el botón de cierre
+        btnCerrarModal.onclick = function() {
+          modal.style.display = "none";
+        };
+
+        // Cierra la modal al hacer clic en Aceptar
+        btnAceptarDatos.onclick = function() {
+          modal.style.display = "none";
+        };
+
+        // Abre la modal automáticamente al cargar la página
+        window.onload = function() {
+          abrirModal();
+        };
+
     </script>
 </body>
 </html>

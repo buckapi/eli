@@ -1962,14 +1962,21 @@ width: 100px;
   background-color: rgba(0, 0, 0, 0.5); /* Fondo oscurecido */
   justify-content: center;
   align-items: center;
+  padding-top: 35%;
+}
+@media (max-width: 767px) {
+    .modal{
+         padding-top: 110%;
+    }
 }
 
 .modal-contenido {
   background-color: #fefefe;
   padding: 20px;
   border-radius: 5px;
-  width: 60%;
+  width: 100%;
   text-align: center;
+
 }
 
 /* Estilos para el botón de cierre */

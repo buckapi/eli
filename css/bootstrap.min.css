@@ -37,6 +37,7 @@
 
 *,::after,::before {
     box-sizing: border-box
+    padding-right: 4px;
 }
 
 html {
@@ -4251,8 +4252,9 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
 }
 
 .navbar-light .navbar-toggler {
-    color: rgba(0,0,0,.5);
-    border-color: rgba(0,0,0,.1)
+   color: #ffff;
+    border-color: rgb(164 120 58);
+    background: rgb(164 120 58);
 }
 
 .navbar-light .navbar-toggler-icon {
