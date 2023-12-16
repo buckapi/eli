@@ -38,15 +38,23 @@
                                     <!-- Logo -->
                                     <a class="navbar-brand" href="index.html"> <img src="images/logo-dark.png" alt=""> </a>
                                     <a href="index.html"> <span class="ti-shift-left"></span> Volver </a>
-                                    <div class="dropdown">
+                                    <!-- <div class="dropdown">
                                       <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <span class="ti-world"></span>
                                       </button>
                                       <div class="dropdown-menu" aria-labelledby="languageDropdown" style="background: #fff;">
                                         <a class="dropdown-item" href="#">Español</a>
                                         <a class="dropdown-item" href="#">Inglés</a>
-                                        <!-- Agrega más opciones de idioma si es necesario -->
+                                        
                                       </div>
+                                    </div> -->
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  <span class="ti-world"></span></button>
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                            <li class="nav-item"> <a class="dropdown-item" href="#">Español</a></li>
+                                            <li class="nav-item"><a class="dropdown-item" href="#">Inglés</a></li>
+                                            
+                                        </ul>
                                     </div>
                                     
                                 </nav>
@@ -74,7 +82,7 @@
                     
                         <form method="post" class="contact__form" action="">
                             <div class="row">
-                                <div class="col-md-5 offset-md-1">
+                                <div class="col-md-12 mb-4">
                                     <h4 class="mb-30">Conforme a lo mencionado, debe llenar el siguiente contrato:</h4>
                                     <!-- Form message -->
                                     <div class="row">
@@ -135,7 +143,7 @@
                                         
                                     </div>
                                 </div>
-                                <div class="col-md-6 mb-4" style="text-align: justify;">
+                                <div class="col-md-12 mb-4" style="text-align: justify;">
                                     <p>Yo: <input name="name" type="text" placeholder="Nombre *" required> contrato y autorizo a ELIFOTOGRAFÍA para ser la fotógrafa de mi evento. Al mismo tiempo, libero los derechos de autor de las fotografías allí tomadas. </p>
                                     <p><b>1. Propósito y Términos del Servicio:</b> Este documento establece los términos y condiciones por los cuales se llevará a cabo la ceremonia de la boda, incluyendo la fecha, el lugar, la recepción y los servicios contratados. La pareja contrata a ELIFOTOGRAFÍA, quien se compromete a cubrir el evento según lo acordado. </p>
                                     <p><b>2. Depósito y Cancelación:</b>  El depósito no es reembolsable en caso de cancelación o cambio del compromiso por parte del cliente. Si ELIFOTOGRAFÍA no se presenta en el lugar y hora especificados sin notificar al cliente con al menos 24 horas de antelación, el depósito será reembolsado al cliente.  </p>
@@ -146,6 +154,26 @@
                                     <p><b> Responsabilidad:</b> ELIFOTOGRAFIA no se hace responsable por accidentes o incidentes antes, durante o después del evento. </p>
 
                                     
+                                    
+                                </div>
+                                <div class="col-md-6 mb-4" style="text-align: justify;">
+                                   <h3 style="text-align: center;"> Política de Reembolso y Cambio de Fecha</h3>
+                                  
+                                       <p><b>1.</b> No se realizarán reembolsos una vez realizada la reserva del servicio fotográfico.</p>
+                                       <p><b>2.</b> Se permite el cambio de fecha de la sesión fotográfica siempre y cuando se notifique a ELIFOTOGRAFÍA con un mínimo de una semana de anticipación a la fecha originalmente acordada.</p>
+                                       <p><b>3.</b> El cambio de fecha estará sujeto a la disponibilidad de ELIFOTOGRAFÍA. Las nuevas fechas para la sesión serán propuestas por el fotógrafo, considerando su disponibilidad de tiempo.</p>
+                                       <p><b>4.</b> El cliente debe aceptar las fechas alternativas propuestas por ELIFOTOGRAFÍA y confirmar la nueva fecha acordada dentro de un plazo de tiempo definido por ambas partes.</p>
+                                       <p><b>5.</b> En caso de que ELIFOTOGRAFÍA no pueda reprogramar la sesión debido a limitaciones de su disponibilidad, se podrán explorar opciones alternativas de acuerdo mutuo.</p>
+
+                                </div>
+                                <div class="col-md-6 mb-4" style="text-align: justify;">
+                                   <h3 style="text-align: center;"> Política de Pago</h3>
+                                   
+                                    <p><b>1.</b> El cliente esta de acuerdo con el precio del servicio seleccionado por su parte y se compromete a realizar un anticipo del precio total del servicio e esta contratación. </p>
+                                    <p><b>2.</b> El monto del anticipo será del 25%, 30% o 50% del costo total del servicio, según lo acordado entre las partes al momento de la contratación. El anticipo se considerará como garantía para reservar la fecha y hora acordadas para la sesión fotográfica.</p>
+                                    <p><b>3.</b>El pago restante del servicio fotográfico, equivalente al porcentaje pendiente del monto total, deberá ser cancelado al finalizar la sesión fotográfica y antes de la entrega final del producto acordado.</p>
+                                    <p><b>4.</b> En caso de cancelación por parte del cliente, el anticipo no será reembolsable.
+                                    Si por alguna razón ELIFOTOGRAFÍA no puede cumplir con la sesión acordada, se procederá a la devolución completa del anticipo realizado por el cliente y sera notificado previamente.</p>
                                     
                                 </div>
                                 <div class="col-md-12">
@@ -207,15 +235,15 @@
         </div>
     </div>
       <!-- Modal -->
-<div id="miModal" class="modal">
-  <div class="modal-contenido" style="background: #d9ffff;">
-    <span class="cerrar" id="btnCerrarModal">&times;</span>
-    <h2>Aviso de Uso de Datos Personales</h2>
-    <p>Tu privacidad es importante para nosotros. Los datos proporcionados en este proceso de contratación serán utilizados únicamente para este servicio</p>
-    <p>Al continuar, aceptas nuestros términos y condiciones de uso de datos personales.</p>
-    <button id="btnAceptarDatos">Aceptar</button>
-  </div>
-</div>
+    <div id="miModal" class="modal" style="padding-top: 40%;">
+      <div class="modal-contenido" style="background: #d9ffff;">
+        <span class="cerrar" id="btnCerrarModal">&times;</span>
+        <h2>Aviso de Uso de Datos Personales</h2>
+        <p>Tu privacidad es importante para nosotros. Los datos proporcionados en este proceso de contratación serán utilizados únicamente para este servicio</p>
+        <p>Al continuar, aceptas nuestros términos y condiciones de uso de datos personales.</p>
+        <button id="btnAceptarDatos">Aceptar</button>
+      </div>
+    </div>
     <!-- toTop -->
     <a href="index.html#" class="totop">TOP</a>
     <!-- jQuery -->
