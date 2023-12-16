@@ -17,14 +17,16 @@
     <link href="modules/magnific-popup/magnific-popup.css" rel="stylesheet">
     <link href="modules/youtubepopup/YouTubePopUp.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
-   
+  
+
+<!-- Agrega los estilos de Bootstrap Datepicker -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
 </head>
 
 <body>
   
     <!-- Navigation Bar -->
-    
     <header>
         <div class="bethany-header-navbar">
             <div class="container bethany-navbar-container">
@@ -34,16 +36,23 @@
                             <div class="col-md-12">
                                 <nav class="navbar navbar-expand-md navbar-light">
                                     <!-- Logo -->
-                                    <a class="navbar-brand" href="index.html">
-                                        <img src="images/logo-dark.png" alt="">
-                                    </a>
-                                    <a href="index2.html"> <span class="ti-shift-left"></span> Volver </a>
-                                    <!-- Menu -->
+                                    <a class="navbar-brand" href="index2.html"> <img src="images/logo-dark.png" alt=""> </a>
+                                    <a href="index2.html"> <span class="ti-shift-left"></span> Return </a>
+                                    <!-- <div class="dropdown">
+                                      <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="ti-world"></span>
+                                      </button>
+                                      <div class="dropdown-menu" aria-labelledby="languageDropdown" style="background: #fff;">
+                                        <a class="dropdown-item" href="#">Español</a>
+                                        <a class="dropdown-item" href="#">Inglés</a>
+                                        
+                                      </div>
+                                    </div> -->
                                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  <span class="ti-world"></span></button>
                                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                         <ul class="navbar-nav ml-auto py-4 py-md-0">
-                                            <li class="nav-item"> <a class="dropdown-item" href="#">Español</a></li>
-                                            <li class="nav-item"><a class="dropdown-item" href="contratomodelos2.html">Inglés</a></li>
+                                            <li class="nav-item"> <a class="dropdown-item" href="contratobodas.html">Español</a></li>
+                                            <li class="nav-item"><a class="dropdown-item" href="contratobodas2.html">Inglés</a></li>
                                             
                                         </ul>
                                     </div>
@@ -64,14 +73,14 @@
             <div class="row">
                 <div class="col-md-12" style="text-align: center;     padding-top: 70px;">                
 
-                    <h3>Contrato, permiso & liberación de servicio fotográfico para Modelos</h3>
+                    <h3>Contrato & liberación de servicio fotográfico para Boda </h3>
                     <hr class="line line-hr-center">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     
-                        <form method="post" class="contact__form" id="myForm" action="#">
+                        <form method="post" class="contact__form" action="#" id="myForm">
                             <div class="row">
                                 <div class="col-md-12 mb-4">
                                     <h4 class="mb-30">Conforme a lo mencionado, debe llenar el siguiente contrato:</h4>
@@ -85,67 +94,99 @@
                                     </div>
                                     <!-- Form elements -->
                                     <div class="row">
-                                        <div class="col-md-8 form-group">
-                                            <input name="nameModel" type="text" placeholder="Nombre del Modelo: *" required> 
+                                        <div class="col-md-4 form-group">
+                                            <input name="nameBride" type="text" placeholder="Nombre de la Novia: *" required> 
                                         </div>
                                         <div class="col-md-4 form-group">
-
-                                            <input type="text" class="datepicker" name="birthdate" required placeholder="Fecha de nacimiento">
+                                            <input type="text" class="datepicker" name="birthdateBride" required placeholder="Fecha de nacimiento de la Novia">
                                         </div>
-                                        <div class="col-md-6 form-group">
+                                        <div class="col-md-4 form-group">
+                                            <input name="phoneBride" type="text" placeholder="Teléfono de la Novia: *" required> 
+                                        </div>
+                                        <div class="col-md-4 form-group">
+                                            <input name="nameBoyfriend" type="text" placeholder="Nombre del Novio: *" required> 
+                                        </div>
+                                        <div class="col-md-4 form-group">
+                                            <input type="text" class="datepicker" name="birthdateBoyfriend" required placeholder="Fecha de nacimiento del Novio">
+                                        </div>
+                                        <div class="col-md-4 form-group">
+                                            <input name="phoneBoyfriend" type="text" placeholder="Teléfono del Novio: *" required> 
+                                        </div>
+                                        <div class="col-md-12 form-group">
                                             <input name="homeAddress" type="text" placeholder="Dirección de residencia: *" required> 
                                         </div>
-
-                                        <div class="col-md-6 form-group">
+                                        <div class="col-md-3 form-group">
                                             <input name="city" type="text" placeholder="Ciudad: *" required> 
                                         </div>
-                                        <div class="col-md-6 form-group">
+                                        <div class="col-md-3 form-group">
                                             <input name="state" type="text" placeholder="Estado: *" required> 
                                         </div>
-                                        <div class="col-md-6 form-group">
+                                        <div class="col-md-3 form-group">
                                             <input name="postalCode" type="text" placeholder="Codigo postal: *" required> 
                                         </div>
-                                        <div class="col-md-4 form-group">
-                                            <input name="phone" type="text" placeholder="Teléfono: *" required> 
-                                        </div>
-                                        <div class="col-md-4 form-group">
+                                        <div class="col-md-3 form-group">
                                             <input name="email" type="email" placeholder="E-mail *" required> 
                                         </div>
-                                        <div class="col-md-4">
-                                            <div class="wizard-form-input position-relative form-group has-float-label mt-0 n-select-option">Lugar de la sesion:
-                                                <select id="sessionLocation" name="sessionLocation" class="form-control" required>
-                                                    
-                                                    <option value="Estudio" required>
-                                                        Estudio</option>
-                                                    <option value="Exterior">Exterior</option>
+                                        <div class="col-md-12 form-group">
+                                            <input name="sessionLocation2" type="text" placeholder="Dirección del evento: Estudio de ELIFOTOGRAFÍA u otro lugar *" required> 
+                                        </div>                                       
+                                        
+                                         <div class="col-md-4 form-group">
+                                            <input type="text" class="datepicker" name="datepicker" required placeholder="Seleccione la fecha del evento">
+                                        </div>
+                                        <div class="col-md-4 form-group">
+                                            <input type="text" id="horaInput" name="hourInit" placeholder="Hora de inicio: *" required> 
+                                            <span id="horaError" class="error-message" style="display: none;">Ingrese una hora válida en formato HH:mm </span>
+                                        </div>
+                                        <div class="col-md-4 form-group">
+                                            <input type="text" id="horaInput" name="hourEnd" placeholder="Hora de finalización: *" required> 
+                                            <span id="horaError" class="error-message" style="display: none;">Ingrese una hora válida en formato HH:mm </span>
+                                        </div>
+                                        <div class="col-md-6">
+                                            Seleccione el servicio que se ajuste a su presupuesto:
+                                            
+                                            <div class="wizard-form-input position-relative form-group has-float-label mt-0 n-select-option">
+                                                <select id="servicesPrice" name="servicesPrice" class="form-control" required>
+                                                    <option value="Compromiso $299">Compromiso $299</option>
+                                                    <option value="Civil $600">Civil $600</option>
+                                                    <option value="Premium $1.500">Premium $1.500</option>
+                                                    <option value="Delux $2.500">Delux $2.500</option>
                                                     
                                                 </select>
                                             </div>
-                                        </div>                                        
-                                        <div class="col-md-12 form-group">
-                                            <input name="sessionLocation2" type="text" placeholder="Dirección: *" required> 
                                         </div>
-                                         <div class="col-md-6 form-group">
-
-                                            <input type="text" class="datepicker"  name="datepicker" required placeholder="Seleccione la fecha">
-                                           
+                                
+                                        <div class="col-md-6">
+                                            <div class="n-summary">
+                                                <span>Seleccione el primer deposito</span>
+                                                <label>
+                                                    <input type="radio" id="pay" value="25%" name="pay" required>
+                                                    <span class="checkmark">25%</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" id="pay" value="30%" name="pay" required>
+                                                    <span class="checkmark">30%</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" id="pay" value="50%" name="pay" required>
+                                                    <span class="checkmark">50%</span>
+                                                </label>
+                                            </div>
                                         </div>
-                                         <div class="col-md-6 form-group">
-                                            <input type="text" id="horaInput" name="hour" placeholder="Hora: *" required> 
-                                            <span id="horaError" class="error-message" style="display: none;">Ingrese una hora válida en formato HH:mm</span>
-                                        </div>
-
                                         
                                     </div>
                                 </div>
                                 <div class="col-md-12 mb-4" style="text-align: justify;">
                                     <h3 style="text-align: center;">Términos y condiciones</h3>
-                                    <p>El modelo suscrito a este contrato autoriza a ELIFOTOGRAFÍA a ser su fotógrafo/a. por lo tanto yo: <input name="nameFirma" type="text" placeholder="Nombre del contratador@  *" required > 
-                                    autorizo a ELIFOTOGRAFÍA para ser mi fotógrafo/a. Tanto mi esposo como yo somos conscientes de los posibles "riesgos" asociados con esta sesión de fotos, ya que estamos expuestos a situaciones imprevistas. Somos conscientes de que la sesión podría llevarse a cabo al aire libre, lo que implica estar expuestos a condiciones climáticas extremas y a la posible presencia de objetos como arbustos y piedras, entre otros. Asimismo, sabemos que el fotógrafo podría utilizar objetos como parte de la sesión de fotos. </p>
+                                    <p>Yo: <input name="nameSignature" type="text" placeholder="Nombre del contratador@ *" required> contrato y autorizo a ELIFOTOGRAFÍA para ser la fotógrafa de mi evento. Al mismo tiempo, libero los derechos de autor de las fotografías allí tomadas. </p>
+                                    <p><b>1. Propósito y Términos del Servicio:</b> Este documento establece los términos y condiciones por los cuales se llevará a cabo la ceremonia de la boda, incluyendo la fecha, el lugar, la recepción y los servicios contratados. La pareja contrata a ELIFOTOGRAFÍA, quien se compromete a cubrir el evento según lo acordado. </p>
+                                    <p><b>2. Depósito y Cancelación:</b>  El depósito no es reembolsable en caso de cancelación o cambio del compromiso por parte del cliente. Si ELIFOTOGRAFÍA no se presenta en el lugar y hora especificados sin notificar al cliente con al menos 24 horas de antelación, el depósito será reembolsado al cliente.  </p>
+                                    <p><b>3. Entrega de Fotografías: </b> Las fotografías de prueba se entregarán al cliente en formato digital y se almacenarán en un sistema de almacenamiento en la nube durante 3 meses.</p>
+                                    <p><b>4. Cooperación del Cliente:</b> El cliente deberá colaborar y cooperar con  ELIFOTOGRAFÍA para obtener las fotografías deseadas. Esto incluye especificar personas o escenas a fotografiar, posar según la dirección del fotógrafo y proporcionar  una persona para guiar al fotógrafo hacia las escenas deseadas. ELIFOTOGRAFÍA no  será responsable de las fotografías que no se tomen debido a la falta de asistencia o cooperación razonable por parte del cliente o la intervención de los invitados.</p>
+                                    <p><b>5. Derechos de Autor y Uso de Fotografías:</b> ELIFOTOGRAFÍA conserva los derechos de autor de las fotografías, pero otorga al cliente derechos ilimitados, no exclusivos, para usar o reproducir las fotografías por las que el cliente paga. El fotógrafo tiene derecho a utilizar las fotografías en sus redes sociales. </p>
+                                    <p><b>Ley Aplicable:</b> Este contrato se regirá por las leyes del condado y el estado aplicable. </p>
+                                    <p><b> Responsabilidad:</b> ELIFOTOGRAFIA no se hace responsable por accidentes o incidentes antes, durante o después del evento. </p>
 
-                                    <p><b>1. Propósito y Términos del Servicio: </b>  Este documento tiene como finalidad  establecer los términos y condiciones para la realización del evento, incluyendo la fecha, el lugar y los servicios contratados. Contratamos a ELIFOTOGRAFÍA para cubrir  este evento. También consideramos la posibilidad de tomar fotografías en diversas áreas recreativas, como playas, bosques, puentes, parques, ríos, tinas, entre otros. Se podrían utilizar diversos objetos en la sesión, como escaleras, sillas, hamacas,  mecedoras, camas, lámparas, mesas, cajas, bicicletas, automóviles, humo de colores, entre otros, tanto dentro como fuera de una casa o estudio. </p>
-                                    <p><b>2. Responsabilidad por Riesgos:</b>  Tanto ELIFOTOGRAFÍA como sus ayudantes no se hacen responsables de ningún accidente o incidente que pueda afectar el desarrollo del embarazo o causar inconvenientes a la madre o a los participantes. </p>
-                                    <p><b>3. Derechos de Autor y Uso de Fotografías:</b>  El fotógrafo conserva los derechos de autor de las fotografías, pero otorga al cliente derechos ilimitados, pero no exclusivos para usar o reproducir las fotografías por las cuales el cliente paga. El fotógrafo también tiene el derecho de utilizar las fotografías en sus redes sociales.</p>
                                     
                                     
                                 </div>
@@ -169,8 +210,8 @@
                                     Si por alguna razón ELIFOTOGRAFÍA no puede cumplir con la sesión acordada, se procederá a la devolución completa del anticipo realizado por el cliente y sera notificado previamente.</p>
                                     
                                 </div>
-                                <div class="col-md-12">
-                                    <h3 style="text-align: center;">Al firmar este contrato</h3>
+                                 <div class="col-md-12">
+                                    <h2 style="text-align: center;">Al firmar este contrato</h2>
                                     Confirmo que he leído y recibido información previa sobre los riesgos asociados con la sesión de fotos, así como sobre los sitios y objetos que podrían ser utilizados durante la misma, ya sea de mi propiedad o propiedad de ELIFOTOGRAFÍA. Todas las partes involucradas estamos conscientes y acordamos tomar las precauciones necesarias. 
                                     </p>
                                 </div>
@@ -187,6 +228,14 @@
                                         </div>
                                     </div>
                                 </div>
+                                
+                               <!--  <div class="col-md-6">
+                                    <input name="name" type="text" placeholder="Firma del Cliente: *" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input name="name" type="text" placeholder="Firma del Fotografo: *" required>
+                                </div> -->
+                                
                                 <div class="col-md-12" style="text-align:center;">
                                     <input name="submit" type="submit" value="Contratar">
                                 </div>
@@ -200,10 +249,10 @@
     <div id="miModal" class="modal" style="padding-top: 40%;">
       <div class="modal-contenido" style="background: #d9ffff;">
         <span class="cerrar" id="btnCerrarModal">&times;</span>
-        <h2>Aviso de Uso de Datos Personales</h2>
-        <p>Tu privacidad es importante para nosotros. Los datos proporcionados en este proceso de contratación serán utilizados únicamente para este servicio</p>
-        <p>Al continuar, aceptas nuestros términos y condiciones de uso de datos personales.</p>
-        <button id="btnAceptarDatos">Aceptar</button>
+        <h2>Notice of Use of Personal Data</h2>
+        <p>Your privacy is important for us. The data provided in this contracting process will be used only for this service</p>
+        <p>By continuing, you accept our terms and conditions of use of personal data.</p>
+        <button id="btnAceptarDatos">Accept</button>
       </div>
     </div>
     <!-- toTop -->
@@ -238,32 +287,7 @@
         });
 
     </script>
-    <script>
-        // Obtener referencia al campo de entrada y al mensaje de error
-        const horaInput = document.getElementById('horaInput');
-        const horaError = document.getElementById('horaError');
-
-        // Función para validar el formato de hora HH:mm
-        function validarHora(input) {
-          const horaRegex = /^(?:2[0-3]|[01][0-9]):[0-5][0-9]$/; // Expresión regular para el formato HH:mm
-
-          return horaRegex.test(input);
-        }
-
-        // Validar la hora al perder el foco del campo de entrada
-        horaInput.addEventListener('blur', function() {
-          const horaIngresada = horaInput.value;
-
-          if (!validarHora(horaIngresada)) {
-            horaError.style.display = 'block'; // Mostrar mensaje de error si la hora es inválida
-            horaInput.classList.add('error'); // Agregar clase de estilo para indicar error
-          } else {
-            horaError.style.display = 'none'; // Ocultar mensaje de error si la hora es válida
-            horaInput.classList.remove('error'); // Eliminar clase de estilo de error
-          }
-        });
-
-    </script>
+   
     <script>
     // Obtiene elementos del DOM
         var modal = document.getElementById("miModal");
@@ -307,7 +331,7 @@
 
             const jsonPayload = JSON.stringify(jsonObject);
 
-            fetch('https://db.buckapi.com:8059/api/collections/contractModels/records', {
+            fetch('https://db.buckapi.com:8059/api/collections/contractWedding/records', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json'
