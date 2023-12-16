@@ -579,7 +579,7 @@ display: block;
     }
     .dropdown-menu {
         padding: 0 !important;
-        background-color: transparent;
+        background-color: #e9ecef;
         box-shadow: none;
         transition: all 200ms linear;
     }

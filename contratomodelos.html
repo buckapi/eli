@@ -67,7 +67,7 @@
             <div class="row">
                 <div class="col-md-12">
                     
-                        <form method="post" class="contact__form" action="">
+                        <form method="post" class="contact__form" id="myForm" action="#">
                             <div class="row">
                                 <div class="col-md-12 mb-4">
                                     <h4 class="mb-30">Conforme a lo mencionado, debe llenar el siguiente contrato:</h4>
@@ -81,36 +81,37 @@
                                     </div>
                                     <!-- Form elements -->
                                     <div class="row">
-                                        <div class="col-md-12 form-group">
-                                            <input name="name" type="text" placeholder="Nombre del Modelo: *" required> 
+                                        <div class="col-md-8 form-group">
+                                            <input name="nameModel" type="text" placeholder="Nombre del Modelo: *" required> 
                                         </div>
-                                        <div class="col-md-6 form-group">
+                                        <div class="col-md-4 form-group">
 
-                                            <input type="text" id="datepicker" required placeholder="Fecha de nacimiento">
-                                        </div>
-                                        <div class="col-md-12 form-group">
-                                            <input name="name" type="text" placeholder="Dirección de residencia: *" required> 
+                                            <input type="text" class="datepicker" name="birthdate" required placeholder="Fecha de nacimiento">
                                         </div>
                                         <div class="col-md-6 form-group">
-                                            <input name="name" type="text" placeholder="Ciudad: *" required> 
+                                            <input name="homeAddress" type="text" placeholder="Dirección de residencia: *" required> 
+                                        </div>
+
+                                        <div class="col-md-6 form-group">
+                                            <input name="city" type="text" placeholder="Ciudad: *" required> 
                                         </div>
                                         <div class="col-md-6 form-group">
-                                            <input name="name" type="text" placeholder="Estado: *" required> 
+                                            <input name="state" type="text" placeholder="Estado: *" required> 
                                         </div>
                                         <div class="col-md-6 form-group">
-                                            <input name="name" type="text" placeholder="Codigo postal: *" required> 
+                                            <input name="postalCode" type="text" placeholder="Codigo postal: *" required> 
                                         </div>
-                                        <div class="col-md-6 form-group">
+                                        <div class="col-md-4 form-group">
                                             <input name="phone" type="text" placeholder="Teléfono: *" required> 
                                         </div>
-                                        <div class="col-md-6 form-group">
+                                        <div class="col-md-4 form-group">
                                             <input name="email" type="email" placeholder="E-mail *" required> 
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-4">
                                             <div class="wizard-form-input position-relative form-group has-float-label mt-0 n-select-option">Lugar de la sesion:
-                                                <select id="" name="" class="form-control" required data-parsley-required data-parsley-required-message="Por favor, seleccione un tipo de servicio">
+                                                <select id="sessionLocation" name="sessionLocation" class="form-control" required>
                                                     
-                                                    <option value="Estudio">
+                                                    <option value="Estudio" required>
                                                         Estudio</option>
                                                     <option value="Exterior">Exterior</option>
                                                     
@@ -118,22 +119,24 @@
                                             </div>
                                         </div>                                        
                                         <div class="col-md-12 form-group">
-                                            <input name="name" type="text" placeholder="Dirección: *" required> 
+                                            <input name="sessionLocation2" type="text" placeholder="Dirección: *" required> 
                                         </div>
                                          <div class="col-md-6 form-group">
 
-                                            <input type="text" id="datepicker" required placeholder="Seleccione la fecha">
+                                            <input type="text" class="datepicker"  name="datepicker" required placeholder="Seleccione la fecha">
                                            
                                         </div>
                                          <div class="col-md-6 form-group">
-                                            <input name="name" type="text" placeholder="Hora: *" required> 
-                                        </div>
+    <input type="text" id="horaInput" name="hour" placeholder="Hora: *" required> 
+    <span id="horaError" class="error-message" style="display: none;">Ingrese una hora válida en formato HH:mm</span>
+</div>
+
                                         
                                     </div>
                                 </div>
                                 <div class="col-md-12 mb-4" style="text-align: justify;">
                                     <h3 style="text-align: center;">Términos y condiciones</h3>
-                                    <p>Yo: <input name="name" type="text" placeholder="Nombre  *" required > 
+                                    <p>Yo: <input name="nameFirma" type="text" placeholder="Nombre  *" required > 
                                     autorizo a ELIFOTOGRAFÍA para ser mi fotógrafo/a. Tanto mi esposo como yo somos conscientes de los posibles "riesgos" asociados con esta sesión de fotos, ya que estamos expuestos a situaciones imprevistas. Somos conscientes de que la sesión podría llevarse a cabo al aire libre, lo que implica estar expuestos a condiciones climáticas extremas y a la posible presencia de objetos como arbustos y piedras, entre otros. Asimismo, sabemos que el fotógrafo podría utilizar objetos como parte de la sesión de fotos. </p>
 
                                     <p><b>1. Propósito y Términos del Servicio: </b>  Este documento tiene como finalidad  establecer los términos y condiciones para la realización del evento, incluyendo la fecha, el lugar y los servicios contratados. Contratamos a ELIFOTOGRAFÍA para cubrir  este evento. También consideramos la posibilidad de tomar fotografías en diversas áreas recreativas, como playas, bosques, puentes, parques, ríos, tinas, entre otros. Se podrían utilizar diversos objetos en la sesión, como escaleras, sillas, hamacas,  mecedoras, camas, lámparas, mesas, cajas, bicicletas, automóviles, humo de colores, entre otros, tanto dentro como fuera de una casa o estudio. </p>
@@ -214,6 +217,8 @@
     <script src="modules/masonry/masonry.pkgd.min.js"></script>
     <script src="modules/youtubepopup/YouTubePopUp.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
@@ -221,11 +226,39 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
     <script>
-      // Inicializar el selector de fechas
-      $('#datepicker').datepicker({
-        format: 'dd/mm/yyyy',
-        autoclose: true
-      });
+      $(document).ready(function() {
+        $('.datepicker').datepicker({
+            format: 'dd/mm/yyyy',
+            autoclose: true
+            });
+        });
+
+    </script>
+    <script>
+        // Obtener referencia al campo de entrada y al mensaje de error
+        const horaInput = document.getElementById('horaInput');
+        const horaError = document.getElementById('horaError');
+
+        // Función para validar el formato de hora HH:mm
+        function validarHora(input) {
+          const horaRegex = /^(?:2[0-3]|[01][0-9]):[0-5][0-9]$/; // Expresión regular para el formato HH:mm
+
+          return horaRegex.test(input);
+        }
+
+        // Validar la hora al perder el foco del campo de entrada
+        horaInput.addEventListener('blur', function() {
+          const horaIngresada = horaInput.value;
+
+          if (!validarHora(horaIngresada)) {
+            horaError.style.display = 'block'; // Mostrar mensaje de error si la hora es inválida
+            horaInput.classList.add('error'); // Agregar clase de estilo para indicar error
+          } else {
+            horaError.style.display = 'none'; // Ocultar mensaje de error si la hora es válida
+            horaInput.classList.remove('error'); // Eliminar clase de estilo de error
+          }
+        });
+
     </script>
     <script>
     // Obtiene elementos del DOM
@@ -253,6 +286,48 @@
           abrirModal();
         };
 
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const form = document.getElementById('myForm');
+
+          form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
+
+            const formData = new FormData(form);
+            const jsonObject = {};
+
+            for (const [key, value] of formData.entries()) {
+              jsonObject[key] = value;
+            }
+
+            const jsonPayload = JSON.stringify(jsonObject);
+
+            fetch('https://db.buckapi.com:8059/api/collections/contractModels/records', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+                // Si necesitas autenticación, aquí deberías agregar tu token de acceso
+                // 'Authorization': 'Bearer TU_ACCESS_TOKEN'
+              },
+              body: jsonPayload
+            })
+            .then(response => response.json())
+            .then(data => {
+              console.log('Datos enviados exitosamente:', data);
+               window.location.href = 'confirmacion.html';
+              // Puedes manejar una redirección o mostrar un mensaje de éxito aquí
+              // window.location.href = 'pagina-de-confirmacion.html';
+            })
+            .catch(error => {
+              console.error('Error al enviar los datos:', error);
+              // Puedes manejar errores aquí
+            });
+          });
+        });
+    </script>
+    <script>
+        
     </script>
 </body>
 </html>
