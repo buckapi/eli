@@ -80,7 +80,7 @@
             <div class="row">
                 <div class="col-md-12">
                     
-                        <form method="post" class="contact__form" action="">
+                        <form method="post" class="contact__form" action="#" id="myForm">
                             <div class="row">
                                 <div class="col-md-12 mb-4">
                                     <h4 class="mb-30">Conforme a lo mencionado, debe llenar el siguiente contrato:</h4>
@@ -94,57 +94,91 @@
                                     </div>
                                     <!-- Form elements -->
                                     <div class="row">
+                                        <div class="col-md-4 form-group">
+                                            <input name="nameBride" type="text" placeholder="Nombre de la Novia: *" required> 
+                                        </div>
+                                        <div class="col-md-4 form-group">
+                                            <input type="text" class="datepicker" name="birthdateBride" required placeholder="Fecha de nacimiento de la Novia">
+                                        </div>
+                                        <div class="col-md-4 form-group">
+                                            <input name="phoneBride" type="text" placeholder="Teléfono de la Novia: *" required> 
+                                        </div>
+                                        <div class="col-md-4 form-group">
+                                            <input name="nameBoyfriend" type="text" placeholder="Nombre del Novio: *" required> 
+                                        </div>
+                                        <div class="col-md-4 form-group">
+                                            <input type="text" class="datepicker" name="birthdateBoyfriend" required placeholder="Fecha de nacimiento del Novio">
+                                        </div>
+                                        <div class="col-md-4 form-group">
+                                            <input name="phoneBoyfriend" type="text" placeholder="Teléfono del Novio: *" required> 
+                                        </div>
                                         <div class="col-md-12 form-group">
-                                            <input name="name" type="text" placeholder="Nombre de la Novia: *" required> 
+                                            <input name="homeAddress" type="text" placeholder="Dirección de residencia: *" required> 
                                         </div>
-                                        <div class="col-md-6 form-group">
-                                            <input type="text" class="datepicker" required placeholder="Fecha de nacimiento de la novia">
+                                        <div class="col-md-3 form-group">
+                                            <input name="city" type="text" placeholder="Ciudad: *" required> 
                                         </div>
-                                        <div class="col-md-6 form-group">
-                                            <input name="phone" type="text" placeholder="Teléfono: *" required> 
+                                        <div class="col-md-3 form-group">
+                                            <input name="state" type="text" placeholder="Estado: *" required> 
                                         </div>
-                                        <div class="col-md-12 form-group">
-                                            <input name="name" type="text" placeholder="Nombre del Novio: *" required> 
+                                        <div class="col-md-3 form-group">
+                                            <input name="postalCode" type="text" placeholder="Codigo postal: *" required> 
                                         </div>
-                                        <div class="col-md-6 form-group">
-                                            <input type="text" class="datepicker" required placeholder="Fecha de nacimiento del Novio">
-                                        </div>
-                                        <div class="col-md-6 form-group">
-                                            <input name="phone" type="text" placeholder="Teléfono: *" required> 
-                                        </div>
-                                        <div class="col-md-12 form-group">
-                                            <input name="name" type="text" placeholder="Dirección de residencia: *" required> 
-                                        </div>
-                                        <div class="col-md-6 form-group">
-                                            <input name="name" type="text" placeholder="Ciudad: *" required> 
-                                        </div>
-                                        <div class="col-md-6 form-group">
-                                            <input name="name" type="text" placeholder="Estado: *" required> 
-                                        </div>
-                                        <div class="col-md-6 form-group">
-                                            <input name="name" type="text" placeholder="Codigo postal: *" required> 
-                                        </div>
-                                        <div class="col-md-6 form-group">
+                                        <div class="col-md-3 form-group">
                                             <input name="email" type="email" placeholder="E-mail *" required> 
                                         </div>
                                         <div class="col-md-12 form-group">
-                                            <input name="name" type="text" placeholder="Dirección del evento: *" required> 
+                                            <input name="sessionLocation2" type="text" placeholder="Dirección del evento: Estudio de ELIFOTOGRAFÍA u otro lugar *" required> 
                                         </div>                                       
                                         
-                                         <div class="col-md-12 form-group">
-                                            <input type="text" class="datepicker" required placeholder="Seleccione la fecha del evento">
+                                         <div class="col-md-4 form-group">
+                                            <input type="text" class="datepicker" name="datepicker" required placeholder="Seleccione la fecha del evento">
                                         </div>
-                                         <div class="col-md-6 form-group">
-                                            <input name="name" type="text" placeholder="Hora de inicio: *" required> 
+                                        <div class="col-md-4 form-group">
+                                            <input type="text" id="horaInput" name="hourInit" placeholder="Hora de inicio: *" required> 
+                                            <span id="horaError" class="error-message" style="display: none;">Ingrese una hora válida en formato HH:mm </span>
                                         </div>
-                                        <div class="col-md-6 form-group">
-                                            <input name="name" type="text" placeholder="Hora de finalización: *" required> 
+                                        <div class="col-md-4 form-group">
+                                            <input type="text" id="horaInput" name="hourEnd" placeholder="Hora de finalización: *" required> 
+                                            <span id="horaError" class="error-message" style="display: none;">Ingrese una hora válida en formato HH:mm </span>
+                                        </div>
+                                        <div class="col-md-6">
+                                            Seleccione el servicio que se ajuste a su presupuesto:
+                                            
+                                            <div class="wizard-form-input position-relative form-group has-float-label mt-0 n-select-option">
+                                                <select id="servicesPrice" name="servicesPrice" class="form-control" required>
+                                                    <option value="Compromiso $299">Compromiso $299</option>
+                                                    <option value="Civil $600">Civil $600</option>
+                                                    <option value="Premium $1.500">Premium $1.500</option>
+                                                    <option value="Delux $2.500">Delux $2.500</option>
+                                                    
+                                                </select>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="col-md-6">
+                                            <div class="n-summary">
+                                                <span>Seleccione el primer deposito</span>
+                                                <label>
+                                                    <input type="radio" id="pay" value="25%" name="pay" required>
+                                                    <span class="checkmark">25%</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" id="pay" value="30%" name="pay" required>
+                                                    <span class="checkmark">30%</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" id="pay" value="50%" name="pay" required>
+                                                    <span class="checkmark">50%</span>
+                                                </label>
+                                            </div>
                                         </div>
                                         
                                     </div>
                                 </div>
                                 <div class="col-md-12 mb-4" style="text-align: justify;">
-                                    <p>Yo: <input name="name" type="text" placeholder="Nombre *" required> contrato y autorizo a ELIFOTOGRAFÍA para ser la fotógrafa de mi evento. Al mismo tiempo, libero los derechos de autor de las fotografías allí tomadas. </p>
+                                    <h3 style="text-align: center;">Términos y condiciones</h3>
+                                    <p>Yo: <input name="nameSignature" type="text" placeholder="Nombre del contratador@ *" required> contrato y autorizo a ELIFOTOGRAFÍA para ser la fotógrafa de mi evento. Al mismo tiempo, libero los derechos de autor de las fotografías allí tomadas. </p>
                                     <p><b>1. Propósito y Términos del Servicio:</b> Este documento establece los términos y condiciones por los cuales se llevará a cabo la ceremonia de la boda, incluyendo la fecha, el lugar, la recepción y los servicios contratados. La pareja contrata a ELIFOTOGRAFÍA, quien se compromete a cubrir el evento según lo acordado. </p>
                                     <p><b>2. Depósito y Cancelación:</b>  El depósito no es reembolsable en caso de cancelación o cambio del compromiso por parte del cliente. Si ELIFOTOGRAFÍA no se presenta en el lugar y hora especificados sin notificar al cliente con al menos 24 horas de antelación, el depósito será reembolsado al cliente.  </p>
                                     <p><b>3. Entrega de Fotografías: </b> Las fotografías de prueba se entregarán al cliente en formato digital y se almacenarán en un sistema de almacenamiento en la nube durante 3 meses.</p>
@@ -176,54 +210,31 @@
                                     Si por alguna razón ELIFOTOGRAFÍA no puede cumplir con la sesión acordada, se procederá a la devolución completa del anticipo realizado por el cliente y sera notificado previamente.</p>
                                     
                                 </div>
-                                <div class="col-md-12">
+                                 <div class="col-md-12">
                                     <h2 style="text-align: center;">Al firmar este contrato</h2>
-                                    <p style="text-align: justify;"> Confirmo que he leído y recibido información previa sobre los riesgos asociados con la sesión de fotos, así como sobre los sitios y objetos que podrían ser utilizados durante la misma, ya sea de mi propiedad o propiedad de ELIFOTOGRAFÍA. Todas las partes involucradas estamos conscientes y acordamos tomar las precauciones necesarias. 
+                                    Confirmo que he leído y recibido información previa sobre los riesgos asociados con la sesión de fotos, así como sobre los sitios y objetos que podrían ser utilizados durante la misma, ya sea de mi propiedad o propiedad de ELIFOTOGRAFÍA. Todas las partes involucradas estamos conscientes y acordamos tomar las precauciones necesarias. 
                                     </p>
                                 </div>
-                                <div class="col-md-6">
-                                    Seleccione el servicio que se ajuste a su presupuesto:
-                                    
-                                    <div class="wizard-form-input position-relative form-group has-float-label mt-0 n-select-option">
-                                        <select id="" name="" class="form-control" required data-parsley-required data-parsley-required-message="Por favor, seleccione un tipo de servicio">
-                                            <option value="Estudio">Compromiso $299</option>
-                                            <option value="Estudio">Civil $600</option>
-                                            <option value="Exterior">Premium $1.500</option>
-                                            <option value="Exterior">Delux $2.500</option>
-                                            
-                                        </select>
-                                </div>
-                                </div>
-                                
-                                <div class="col-md-6">
-                                    <div class="n-summary">
-                                        <span>Seleccione el primer deposito</span>
-                                        <label>
-                                            <input type="radio" id="clientType" value="nuevo" name="clientType" required 
-                                                   data-parsley-required 
-                                                   data-parsley-required-message="Por favor, selecciona un tipo de cliente">
-                                            <span class="checkmark">20%</span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" id="clientType" value="existente" name="clientType" required 
-                                                   data-parsley-required 
-                                                   data-parsley-required-message="Por favor, selecciona un tipo de cliente">
-                                            <span class="checkmark">30%</span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" id="clientType" value="existente" name="clientType" required 
-                                                   data-parsley-required 
-                                                   data-parsley-required-message="Por favor, selecciona un tipo de cliente">
-                                            <span class="checkmark">50%</span>
-                                        </label>
+                                <div class="col-md-12 wizard-identity wizard-content-form" style="padding-top:25px; text-align: right;">
+                                    <div class="taxable-area">
+                                        <div class="row">
+                                            <label>
+                                                <input type="checkbox" class="tax-check" value="incomeStatement" name="incomeStatement" id="incomeStatement" 
+                                                       required
+                                                       data-parsley-required-message="Debes marcar esta casilla para continuar">
+                                                <span class="checkbox-box-border"></span>
+                                                <span class="taxable-option">Acepto los términos y condiciones.</span>
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                
+                               <!--  <div class="col-md-6">
                                     <input name="name" type="text" placeholder="Firma del Cliente: *" required>
                                 </div>
                                 <div class="col-md-6">
                                     <input name="name" type="text" placeholder="Firma del Fotografo: *" required>
-                                </div>
+                                </div> -->
                                 
                                 <div class="col-md-12" style="text-align:center;">
                                     <input name="submit" type="submit" value="Contratar">
@@ -259,6 +270,8 @@
     <script src="modules/masonry/masonry.pkgd.min.js"></script>
     <script src="modules/youtubepopup/YouTubePopUp.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
@@ -271,7 +284,10 @@
             format: 'dd/mm/yyyy',
             autoclose: true
             });
-        });    </script>
+        });
+
+    </script>
+   
     <script>
     // Obtiene elementos del DOM
         var modal = document.getElementById("miModal");
@@ -298,6 +314,45 @@
           abrirModal();
         };
 
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const form = document.getElementById('myForm');
+
+          form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
+
+            const formData = new FormData(form);
+            const jsonObject = {};
+
+            for (const [key, value] of formData.entries()) {
+              jsonObject[key] = value;
+            }
+
+            const jsonPayload = JSON.stringify(jsonObject);
+
+            fetch('https://db.buckapi.com:8059/api/collections/contractWedding/records', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+                // Si necesitas autenticación, aquí deberías agregar tu token de acceso
+                // 'Authorization': 'Bearer TU_ACCESS_TOKEN'
+              },
+              body: jsonPayload
+            })
+            .then(response => response.json())
+            .then(data => {
+              console.log('Datos enviados exitosamente:', data);
+               window.location.href = 'confirmacion.html';
+              // Puedes manejar una redirección o mostrar un mensaje de éxito aquí
+              // window.location.href = 'pagina-de-confirmacion.html';
+            })
+            .catch(error => {
+              console.error('Error al enviar los datos:', error);
+              // Puedes manejar errores aquí
+            });
+          });
+        });
     </script>
 </body>
 </html>
