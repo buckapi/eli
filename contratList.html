@@ -30,14 +30,14 @@
 </head>
 
 <body>
-   <!-- Preloader -->
+    <!-- Preloader -->
     <div id="bethany-page-loading" class="bethany-pageloading">
-        <div class="bethany-pageloading-inner"> 
-            <img src="images/logo-dark.png" class="logo" alt=""> 
+        <div class="bethany-pageloading-inner">
+            <img src="images/logo-dark.png" class="logo" alt="">
         </div>
     </div>
     <!-- Navigation Bar -->
-   
+
     <header>
         <div class="bethany-header-navbar">
             <div class="container bethany-navbar-container">
@@ -51,15 +51,19 @@
                                         <img src="images/logo-dark.png" alt="">
                                     </a>
                                     <!-- Menu -->
-                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  <span class="ti-world"></span></button>
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation"> <span
+                                            class="ti-world"></span></button>
                                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                         <ul class="navbar-nav ml-auto py-4 py-md-0">
                                             <li class="nav-item"> <a class="dropdown-item" href="#">Español</a></li>
-                                            <li class="nav-item"><a class="dropdown-item" href="index2.html">Inglés</a></li>
-                                            
+                                            <li class="nav-item"><a class="dropdown-item" href="index2.html">Inglés</a>
+                                            </li>
+
                                         </ul>
                                     </div>
-                                    
+
                                 </nav>
                             </div>
                         </div>
@@ -78,152 +82,211 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <div class="col-md-4 ">
-                        <div class="item" id="api-results-container">
-                            
+                <div class="col-md-3">
+                    <h3>Contratos maternidad</h3>
+                    <div id="api-results-container-maternity"></div>
+                </div>
+                <div class="col-md-3">
+                    <h3>Contratos modelos</h3>
+                    <div id="api-results-container-models"></div>
+                </div>
+                <div class="col-md-3">
+                    <h3>Contratos menores</h3>
+                    <div id="api-results-container-minors"></div>
+                </div>
+                <div class="col-md-3">
+                    <h3>Contratos bodas</h3>
+                    <div id="api-results-container-wedding"></div>
+                </div>
+                <div id="detailsView" class="col-md-12" style="display: none;">
+                    <!-- Detalles aquí -->
+                    <div>
+                        <button onclick="backToList()">Back</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="detailsView" style="display:none;">
+
+
+
+
+                <div class="row">
+                    <div class="col-md-12 mb-4">
+                        <h3 style="text-align:center;">Contrato & liberación de servicio fotográfico para maternidad
+                        </h3>
+                        <!-- Form message -->
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="mb-30">Datos recabados en este contrato:</h4>
+
+                            </div>
                         </div>
-                        
+                        <!-- Form elements -->
+                        <div class="row">
+                            <div class="col-md-3 form-group">
+                                <p><b>Nombre del modelo#1: </b><span id="detail-nameModel1"></span> </p>
+                            </div>
+                            <div class="col-md-2 form-group">
+                                <p><b>Teléfono: </b><span id="detail-phone1"></span> </p>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <p><b>Nombre del modelo#1: </b><span id="detail-nameModel2"></span> </p>
+                            </div>
+
+                            <div class="col-md-2 form-group">
+                                <p><b>Teléfono: </b><span id="detail-phone2"></span> </p>
+                            </div>
+                            <div class="col-md-2 form-group">
+                                <p><b>E-mail: </b><span id="detail-email"></span> </p>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <p><b>Dirección de habitación: </b><span id="detail-homeAddress"></span> </p>
+                            </div>
+                            <div class="col-md-2 form-group">
+                                <p><b>Ciudad: </b><span id="detail-city"></span> </p>
+                            </div>
+                            <div class="col-md-2 form-group">
+                                <p><b>Estado: </b><span id="detail-state"></span> </p>
+                            </div>
+                            <div class="col-md-2 form-group">
+                                <p><b>Codigo postal: </b><span id="detail-postalCode"></span> </p>
+                            </div>
+
+                            <div class="col-md-2 form-group">
+                                <p><b>Cuantos niños 1 o +?: </b><span id="detail-numberKids"></span> </p>
+                            </div>
+                            <div class="col-md-12">
+                                <h4>Datos de los menores:</h4>
+                                <ul id="detail-references"></ul>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <p><b>Dirección del evento: </b><span id="detail-sessionLocation"></span> </p>
+                            </div>
+                            <div class="col-md-2 form-group">
+                                <p><b>Fecha del evento: </b><span id="detail-datepicker"></span> </p>
+                            </div>
+                            <div class="col-md-2 form-group">
+                                <p><b>Hora del evento: </b><span id="detail-hour"></span> </p>
+                            </div>
+                            <div class="col-md-2 form-group">
+                                <p><b>Servicio seleccionado: </b><span id="detail-servicesPrice"></span> </p>
+                            </div>
+                            <div class="col-md-2">
+                                <p><b>Primer deposito: </b><span id="detail-pay"></span> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 style="text-align: center;">Términos y condiciones</h3>
+                    <div class="col-md-12 mb-4" style="text-align: justify;">
+
+
+                        <p>Yo: <b id="detail-nameSignature"></b>, contrato y autorizo a ELIFOTOGRAFÍA para ser la
+                            fotógrafa de mi evento. Al mismo tiempo, libero los derechos de autor de las fotografías
+                            allí tomadas. </p>
+
+                        <p><b>1. Propósito y Términos del Servicio:</b> Este documento establece los términos y
+                            condiciones por los cuales se llevará a cabo la ceremonia de la boda, incluyendo la
+                            fecha, el lugar, la recepción y los servicios contratados. La pareja contrata a
+                            ELIFOTOGRAFÍA, quien se compromete a cubrir el evento según lo acordado. </p>
+                        <p><b>2. Depósito y Cancelación:</b> El depósito no es reembolsable en caso de cancelación o
+                            cambio del compromiso por parte del cliente. Si ELIFOTOGRAFÍA no se presenta en el lugar
+                            y hora especificados sin notificar al cliente con al menos 24 horas de antelación, el
+                            depósito será reembolsado al cliente. </p>
+                        <p><b>3. Entrega de Fotografías: </b> Las fotografías de prueba se entregarán al cliente en
+                            formato digital y se almacenarán en un sistema de almacenamiento en la nube durante 3
+                            meses.</p>
+                        <p><b>4. Cooperación del Cliente:</b> El cliente deberá colaborar y cooperar con
+                            ELIFOTOGRAFÍA para obtener las fotografías deseadas. Esto incluye especificar personas o
+                            escenas a fotografiar, posar según la dirección del fotógrafo y proporcionar una persona
+                            para guiar al fotógrafo hacia las escenas deseadas. ELIFOTOGRAFÍA no será responsable de
+                            las fotografías que no se tomen debido a la falta de asistencia o cooperación razonable
+                            por parte del cliente o la intervención de los invitados.</p>
+                        <p><b>5. Derechos de Autor y Uso de Fotografías:</b> ELIFOTOGRAFÍA conserva los derechos de
+                            autor de las fotografías, pero otorga al cliente derechos ilimitados, no exclusivos,
+                            para usar o reproducir las fotografías por las que el cliente paga. El fotógrafo tiene
+                            derecho a utilizar las fotografías en sus redes sociales. </p>
+                        <p><b>Ley Aplicable:</b> Este contrato se regirá por las leyes del condado y el estado
+                            aplicable. </p>
+                        <p><b> Responsabilidad:</b> ELIFOTOGRAFIA no se hace responsable por accidentes o incidentes
+                            antes, durante o después del evento. </p>
+
+
+
+                    </div>
+                    <div class="col-md-6 mb-4" style="text-align: justify;">
+                        <h3 style="text-align: center;"> Política de Reembolso y Cambio de Fecha</h3>
+
+                        <p><b>1.</b> No se realizarán reembolsos una vez realizada la reserva del servicio
+                            fotográfico.</p>
+                        <p><b>2.</b> Se permite el cambio de fecha de la sesión fotográfica siempre y cuando se
+                            notifique a ELIFOTOGRAFÍA con un mínimo de una semana de anticipación a la fecha
+                            originalmente acordada.</p>
+                        <p><b>3.</b> El cambio de fecha estará sujeto a la disponibilidad de ELIFOTOGRAFÍA. Las
+                            nuevas fechas para la sesión serán propuestas por el fotógrafo, considerando su
+                            disponibilidad de tiempo.</p>
+                        <p><b>4.</b> El cliente debe aceptar las fechas alternativas propuestas por ELIFOTOGRAFÍA y
+                            confirmar la nueva fecha acordada dentro de un plazo de tiempo definido por ambas
+                            partes.</p>
+                        <p><b>5.</b> En caso de que ELIFOTOGRAFÍA no pueda reprogramar la sesión debido a
+                            limitaciones de su disponibilidad, se podrán explorar opciones alternativas de acuerdo
+                            mutuo.</p>
+
+                    </div>
+                    <div class="col-md-6 mb-4" style="text-align: justify;">
+                        <h3 style="text-align: center;"> Política de Pago</h3>
+
+                        <p><b>1.</b> El cliente esta de acuerdo con el precio del servicio seleccionado por su parte
+                            y se compromete a realizar un anticipo del precio total del servicio e esta
+                            contratación. </p>
+                        <p><b>2.</b> El monto del anticipo será del 25%, 30% o 50% del costo total del servicio,
+                            según lo acordado entre las partes al momento de la contratación. El anticipo se
+                            considerará como garantía para reservar la fecha y hora acordadas para la sesión
+                            fotográfica.</p>
+                        <p><b>3.</b>El pago restante del servicio fotográfico, equivalente al porcentaje pendiente
+                            del monto total, deberá ser cancelado al finalizar la sesión fotográfica y antes de la
+                            entrega final del producto acordado.</p>
+                        <p><b>4.</b> En caso de cancelación por parte del cliente, el anticipo no será reembolsable.
+                            Si por alguna razón ELIFOTOGRAFÍA no puede cumplir con la sesión acordada, se procederá
+                            a la devolución completa del anticipo realizado por el cliente y sera notificado
+                            previamente.</p>
+
+                    </div>
+                    <div class="col-md-12">
+                        <h2 style="text-align: center;">Al firmar este contrato</h2>
+                        Confirmo que he leído y recibido información previa sobre los riesgos asociados con la
+                        sesión de fotos, así como sobre los sitios y objetos que podrían ser utilizados durante la
+                        misma, ya sea de mi propiedad o propiedad de ELIFOTOGRAFÍA. Todas las partes involucradas
+                        estamos conscientes y acordamos tomar las precauciones necesarias.
+                        </p>
+                        <p>Los abajo firmantes aceptan y estan en completo acuerdo con los términos y condiciones
+                            establecidos en este contrato</p>
                     </div>
 
-                </div>
-                <div id="detailsView" style="display:none;">
-            
-                
 
-                
-                <div class="row">
-                                <div class="col-md-12 mb-4">
-                                    <h3 style="text-align:center;">Contrato & liberación de servicio fotográfico para maternidad</h3>
-                                    <!-- Form message -->
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h4 class="mb-30">Datos recabados en este contrato:</h4>
+                    <div class="col-md-6">
+                        <input type="text" placeholder="Firma del Cliente: *" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" placeholder="Firma del Fotografo: *" required>
+                    </div>
 
-                                        </div>
-                                    </div>
-                                    <!-- Form elements -->
-                                    <div class="row">
-                                        <div class="col-md-3 form-group">
-                                            <p><b>Nombre del modelo#1: </b><span id="detail-nameModel1"></span> </p> 
-                                        </div>
-                                        <div class="col-md-2 form-group">
-                                            <p><b>Teléfono: </b><span id="detail-phone1"></span> </p> 
-                                        </div>
-                                        <div class="col-md-3 form-group">
-                                            <p><b>Nombre del modelo#1: </b><span id="detail-nameModel2"></span> </p> 
-                                        </div>
-                                        
-                                        <div class="col-md-2 form-group">
-                                            <p><b>Teléfono: </b><span id="detail-phone2"></span> </p> 
-                                        </div> 
-                                        <div class="col-md-2 form-group">
-                                            <p><b>E-mail: </b><span id="detail-email"></span> </p> 
-                                        </div>                                       
-                                        <div class="col-md-4 form-group">
-                                            <p><b>Dirección de habitación: </b><span id="detail-homeAddress"></span> </p> 
-                                        </div>
-                                        <div class="col-md-2 form-group">
-                                            <p><b>Ciudad: </b><span id="detail-city"></span> </p> 
-                                        </div>
-                                        <div class="col-md-2 form-group">
-                                            <p><b>Estado: </b><span id="detail-state"></span> </p> 
-                                        </div>
-                                        <div class="col-md-2 form-group">
-                                            <p><b>Codigo postal: </b><span id="detail-postalCode"></span> </p> 
-                                        </div>
-                                        
-                                        <div class="col-md-2 form-group">
-                                            <p><b>Cuantos niños 1 o +?: </b><span id="detail-numberKids"></span> </p> 
-                                        </div>
-                                            <div class="col-md-12">
-                                                <h4>Datos de los menores:</h4>
-                                                    <ul id="detail-references"></ul>
-                                            </div>                                        
-                                        <div class="col-md-4 form-group">
-                                            <p><b>Dirección del evento: </b><span id="detail-sessionLocation"></span> </p> 
-                                        </div>                                       
-                                         <div class="col-md-2 form-group">
-                                            <p><b>Fecha del evento: </b><span id="detail-datepicker"></span> </p> 
-                                        </div>
-                                        <div class="col-md-2 form-group">
-                                            <p><b>Hora del evento: </b><span id="detail-hour"></span> </p> 
-                                        </div>
-                                        <div class="col-md-2 form-group">
-                                            <p><b>Servicio seleccionado: </b><span id="detail-servicesPrice"></span> </p> 
-                                        </div>
-                                        <div class="col-md-2">
-                                            <p><b>Primer deposito: </b><span id="detail-pay"></span> </p> 
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 style="text-align: center;">Términos y condiciones</h3>
-                                <div class="col-md-12 mb-4" style="text-align: justify;">
-                                    
-                                    
-                                    <p>Yo: <b id="detail-nameSignature"></b>, contrato y autorizo a ELIFOTOGRAFÍA para ser la fotógrafa de mi evento. Al mismo tiempo, libero los derechos de autor de las fotografías allí tomadas. </p>
-                                    
-                                    <p><b>1. Propósito y Términos del Servicio:</b> Este documento establece los términos y condiciones por los cuales se llevará a cabo la ceremonia de la boda, incluyendo la fecha, el lugar, la recepción y los servicios contratados. La pareja contrata a ELIFOTOGRAFÍA, quien se compromete a cubrir el evento según lo acordado. </p>
-                                    <p><b>2. Depósito y Cancelación:</b>  El depósito no es reembolsable en caso de cancelación o cambio del compromiso por parte del cliente. Si ELIFOTOGRAFÍA no se presenta en el lugar y hora especificados sin notificar al cliente con al menos 24 horas de antelación, el depósito será reembolsado al cliente.  </p>
-                                    <p><b>3. Entrega de Fotografías: </b> Las fotografías de prueba se entregarán al cliente en formato digital y se almacenarán en un sistema de almacenamiento en la nube durante 3 meses.</p>
-                                    <p><b>4. Cooperación del Cliente:</b> El cliente deberá colaborar y cooperar con  ELIFOTOGRAFÍA para obtener las fotografías deseadas. Esto incluye especificar personas o escenas a fotografiar, posar según la dirección del fotógrafo y proporcionar  una persona para guiar al fotógrafo hacia las escenas deseadas. ELIFOTOGRAFÍA no  será responsable de las fotografías que no se tomen debido a la falta de asistencia o cooperación razonable por parte del cliente o la intervención de los invitados.</p>
-                                    <p><b>5. Derechos de Autor y Uso de Fotografías:</b> ELIFOTOGRAFÍA conserva los derechos de autor de las fotografías, pero otorga al cliente derechos ilimitados, no exclusivos, para usar o reproducir las fotografías por las que el cliente paga. El fotógrafo tiene derecho a utilizar las fotografías en sus redes sociales. </p>
-                                    <p><b>Ley Aplicable:</b> Este contrato se regirá por las leyes del condado y el estado aplicable. </p>
-                                    <p><b> Responsabilidad:</b> ELIFOTOGRAFIA no se hace responsable por accidentes o incidentes antes, durante o después del evento. </p>
 
-                                    
-                                    
-                                </div>
-                                <div class="col-md-6 mb-4" style="text-align: justify;">
-                                   <h3 style="text-align: center;"> Política de Reembolso y Cambio de Fecha</h3>
-                                  
-                                       <p><b>1.</b> No se realizarán reembolsos una vez realizada la reserva del servicio fotográfico.</p>
-                                       <p><b>2.</b> Se permite el cambio de fecha de la sesión fotográfica siempre y cuando se notifique a ELIFOTOGRAFÍA con un mínimo de una semana de anticipación a la fecha originalmente acordada.</p>
-                                       <p><b>3.</b> El cambio de fecha estará sujeto a la disponibilidad de ELIFOTOGRAFÍA. Las nuevas fechas para la sesión serán propuestas por el fotógrafo, considerando su disponibilidad de tiempo.</p>
-                                       <p><b>4.</b> El cliente debe aceptar las fechas alternativas propuestas por ELIFOTOGRAFÍA y confirmar la nueva fecha acordada dentro de un plazo de tiempo definido por ambas partes.</p>
-                                       <p><b>5.</b> En caso de que ELIFOTOGRAFÍA no pueda reprogramar la sesión debido a limitaciones de su disponibilidad, se podrán explorar opciones alternativas de acuerdo mutuo.</p>
 
-                                </div>
-                                <div class="col-md-6 mb-4" style="text-align: justify;">
-                                   <h3 style="text-align: center;"> Política de Pago</h3>
-                                   
-                                    <p><b>1.</b> El cliente esta de acuerdo con el precio del servicio seleccionado por su parte y se compromete a realizar un anticipo del precio total del servicio e esta contratación. </p>
-                                    <p><b>2.</b> El monto del anticipo será del 25%, 30% o 50% del costo total del servicio, según lo acordado entre las partes al momento de la contratación. El anticipo se considerará como garantía para reservar la fecha y hora acordadas para la sesión fotográfica.</p>
-                                    <p><b>3.</b>El pago restante del servicio fotográfico, equivalente al porcentaje pendiente del monto total, deberá ser cancelado al finalizar la sesión fotográfica y antes de la entrega final del producto acordado.</p>
-                                    <p><b>4.</b> En caso de cancelación por parte del cliente, el anticipo no será reembolsable.
-                                    Si por alguna razón ELIFOTOGRAFÍA no puede cumplir con la sesión acordada, se procederá a la devolución completa del anticipo realizado por el cliente y sera notificado previamente.</p>
-                                    
-                                </div>
-                                 <div class="col-md-12">
-                                    <h2 style="text-align: center;">Al firmar este contrato</h2>
-                                    Confirmo que he leído y recibido información previa sobre los riesgos asociados con la sesión de fotos, así como sobre los sitios y objetos que podrían ser utilizados durante la misma, ya sea de mi propiedad o propiedad de ELIFOTOGRAFÍA. Todas las partes involucradas estamos conscientes y acordamos tomar las precauciones necesarias. 
-                                    </p>
-                                    <p>Los abajo firmantes aceptan y estan en completo acuerdo con los términos y condiciones establecidos en este contrato</p>
-                                </div>
-                                
 
-                                <div class="col-md-6">
-                                        <input  type="text" placeholder="Firma del Cliente: *" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input  type="text" placeholder="Firma del Fotografo: *" required>
-                                    </div>
-                                
-                                
-                                 
-                                
-                                <!-- <div class="col-md-12" style="text-align:center;">
+                    <!-- <div class="col-md-12" style="text-align:center;">
                                     <input name="submit" type="submit" value="Contratar">
                                 </div> -->
-                            </div>
-             
+                </div>
+
                 <button onclick="backToList()">Volver a la Lista</button>
             </div>
-            </div>
         </div>
-    </div>      
+    </div>
+    </div>
     <!-- Footer -->
-    
+
     <!-- toTop -->
     <a href="index.html#" class="totop">TOP</a>
     <!-- jQuery -->
@@ -240,55 +303,67 @@
     <script src="modules/youtubepopup/YouTubePopUp.js"></script>
     <script src="js/script.js"></script>
     <script>
-        // Declarar una variable global para almacenar los datos
-        var globalData;
-     
-        function fetchPocketBaseData() {
-           fetch('https://db.buckapi.com:8059/api/collections/contractMaternity/records')
-              .then(response => {
-                 if (!response.ok) {
-                     throw new Error('Network response was not ok ' + response.statusText);
-                 }
-                 return response.json();
-              })
-              .then(data => {
-                 // Asignar datos a la variable global
-                 globalData = data;
-     
-                 const container = document.getElementById('api-results-container');
-                 container.innerHTML = '';
-     
-                 globalData.items.forEach((record, index) => {
-                    container.innerHTML += `
-                        <div class="services" onclick="showDetails(${index})" style="cursor:pointer;">
-                            <div class="service-box">
-                                <h4>${record.nameSignature}</h4>
-                                <strong class="popup six">${record.servicesPrice}</strong>
-                            </div>
-                            <a  title="" class="main-btn">Ver</a>
-                        </div>`;
-                 });
-              })
+        // Declarar variables globales para almacenar los datos de cada endpoint
+        var globalDataMaternity;
+        var globalDataModels;
+        var globalDataMinors;
+        var globalDataWedding;
 
-              .catch(error => {
-                 console.error('There was a problem with the fetch operation:', error);
-              });
+        // Función para obtener datos de un endpoint
+        function fetchPocketBaseData(endpoint, containerId, globalDataVar, itemNameProperty) {
+            fetch(`https://db.buckapi.com:8059/api/collections/${endpoint}/records`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Asignar datos a la variable global correspondiente
+                    window[globalDataVar] = data;
+
+                    const container = document.getElementById(containerId);
+                    container.innerHTML = '';
+
+                    data.items.forEach((record, index) => {
+                        container.innerHTML += `
+                    <div class="services" onclick="showDetails('${globalDataVar}', ${index})" style="cursor:pointer;">
+                        <div class="service-box">
+                            <h4>Nombre: ${record[itemNameProperty]}</h4>
+                            <p>Telefono: ${record.phone}</p>
+                            
+                            <!-- Puedes agregar más campos aquí si los necesitas -->
+                        </div>
+                        <a title="" class="main-btn">Ver</a>
+                    </div>`;
+                    });
+                })
+                .catch(error => {
+                    console.error('There was a problem with the fetch operation:', error);
+                });
         }
-     
-        function showDetails(index) {
-           const detailsContainer = document.getElementById('detailsView');
-           const listContainer = document.getElementById('api-results-container');
-     
-           // Usar la variable global para acceder a los datos
-           const details = globalData.items[index];
-     
+
+
+
+        // Función para mostrar detalles
+        function showDetails(globalDataVar, index) {
+            const detailsContainer = document.getElementById('detailsView');
+            const listContainerMaternity = document.getElementById('api-results-container-maternity');
+            const listContainerModels = document.getElementById('api-results-container-models');
+            const listContainerMinors = document.getElementById('api-results-container-minors');
+            const listContainerWedding = document.getElementById('api-results-container-wedding');
+
+            // Usar la variable global correspondiente para acceder a los datos
+            const details = window[globalDataVar].items[index];
+
             document.getElementById('detail-nameModel1').innerText = details.nameModel1;
-           document.getElementById('detail-phone1').innerText = details.phone1;
-           document.getElementById('detail-nameModel2').innerText = details.nameModel2;
-           document.getElementById('detail-phone2').innerText = details.phone2;
+            document.getElementById('detail-phone1').innerText = details.phone1;
+            // ... (otros detalles)
+            document.getElementById('detail-nameModel2').innerText = details.nameModel2;
+            document.getElementById('detail-phone2').innerText = details.phone2;
             document.getElementById('detail-homeAddress').innerText = details.homeAddress;
             document.getElementById('detail-city').innerText = details.city;
-           document.getElementById('detail-state').innerText = details.state;
+            document.getElementById('detail-state').innerText = details.state;
             document.getElementById('detail-postalCode').innerText = details.postalCode;
             document.getElementById('detail-email').innerText = details.email;
             document.getElementById('detail-numberKids').innerText = details.numberKids;
@@ -299,11 +374,11 @@
             document.getElementById('detail-pay').innerText = details.pay;
             document.getElementById('detail-nameSignature').innerText = details.nameSignature;
 
-        const referencesList = document.getElementById('detail-references');
+            const referencesList = document.getElementById('detail-references');
             referencesList.innerHTML = ''; // Limpiar la lista existente
 
-            if (globalData.items[index].references && globalData.items[index].references.length) {
-                globalData.items[index].references.forEach((reference) => {
+            if (details.references && details.references.length) {
+                details.references.forEach((reference) => {
                     let li = document.createElement('li');
                     li.innerText = `Nombre: ${reference.name}, Tiene alguna alergia?: ${reference.afection}, Que tipo de alergia o virus: ${reference.afectionDescription}`;
                     referencesList.appendChild(li);
@@ -312,17 +387,34 @@
                 referencesList.innerHTML = '<li>No hay referencias disponibles.</li>';
             }
 
-        listContainer.style.display = 'none';
-        detailsContainer.style.display = 'block';
+            // Ocultar todos los contenedores de lista
+            listContainerMaternity.style.display = 'none';
+            listContainerModels.style.display = 'none';
+            listContainerMinors.style.display = 'none';
+            listContainerWedding.style.display = 'none';
+            detailsContainer.style.display = 'block';
         }
-     
+
+        // Función para volver a la lista
         function backToList() {
-           document.getElementById('detailsView').style.display = 'none';
-           document.getElementById('api-results-container').style.display = 'block';
+            document.getElementById('detailsView').style.display = 'none';
+            document.getElementById('api-results-container-maternity').style.display = 'block';
+            document.getElementById('api-results-container-models').style.display = 'block';
+            document.getElementById('api-results-container-minors').style.display = 'block';
+            document.getElementById('api-results-container-wedding').style.display = 'block';
         }
-     
-        // Llamada a la función al cargar la página
-        document.addEventListener('DOMContentLoaded', fetchPocketBaseData);
+
+        // Llamada a la función al cargar la página para cada endpoint
+        document.addEventListener('DOMContentLoaded', function () {
+            fetchPocketBaseData('contractMaternity', 'api-results-container-maternity', 'globalDataMaternity', 'nameSignature');
+            fetchPocketBaseData('contractModels', 'api-results-container-models', 'globalDataModels', 'nameModel');
+            fetchPocketBaseData('contractMinors', 'api-results-container-minors', 'globalDataMinors', 'nameModel', 'sessionLocation');
+            fetchPocketBaseData('contractWedding', 'api-results-container-wedding', 'globalDataWedding', 'nameBride');
+        });
+
+
+
     </script>
 </body>
+
 </html>
